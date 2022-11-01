@@ -1,0 +1,219 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url(IMG/Fondo_Espacio.gif);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    color: white; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+}
+
+
+
+
+.Contenedor_RC {
+    width: 7vw;
+    height: 3vw; 
+    border-radius: 3rem; 
+    background: transparent; 
+    border: 3px solid white; 
+    position: relative;
+    left: 44%; top: -10%; 
+    cursor: pointer;
+}
+.Recursos {
+    width: 40%; 
+    height: 100%; 
+    border-radius: 50%; 
+    background: white; 
+    margin-left: 0%; 
+    transition: 1s;
+}
+/*Title-principal*/
+.principal {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    
+
+}
+.text-principal {
+    font-size: 60px;
+    top: -12%;
+}
+.name-principal{ 
+    
+    font-size: 80px;
+    margin-bottom: 0.5rem
+    
+
+}
+.boton-principal a{
+    text-decoration: none;
+    color: white;
+
+}
+.boton-principal h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    margin:auto auto;
+    margin-top: 1rem;
+      
+}
+.boton-principal {
+    text-align: center;
+  
+    width: 200px; 
+    height: 60px; 
+    background: rgb(144, 90, 196); /*Este es el boton de JUGAR*/
+    cursor: pointer;
+    color: white; 
+    border-radius: 5px; 
+    box-decoration-break:slice;
+    border:none;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 1rem; }
+/*Sección 1*/
+
+.Seccion_01{
+    width: 100%; 
+    height: 100vh; 
+    overflow: hidden; 
+    position: relative; 
+    top: 0px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+ 
+
+
+
+
+ /* Sección 2- Reglas +*/
+
+
+
+.Titulo_Reglas{
+    font-size: 25px; 
+    font-family: 'Press Start 2P', cursive;}
+
+.Img_reglas {
+    max-width: 100%;
+    border-radius: 10px;
+   
+}
+
+.Reglas_estilos {
+    margin-top: 2rem;
+    background: rgba(248, 248, 248, 0.521); 
+    color: black; 
+    border: 0.19vw solid black;  
+    font-size: 16px;
+    border-radius: 8px;
+    
+    
+}
+.Reglas_estilos h3  {
+   
+    margin-left: 3%; 
+    margin-right: 3%; 
+    text-align: center;} 
+.Reglas_estilos p  {
+    
+    margin-left: 3%; 
+    margin-right: 3%; 
+    text-align: justify;
+}
+/*Fin de Reglas*/
+.Listo {
+    border-radius: 5px;
+    width: 150px; 
+    height: 60px; 
+    background: rgb(100, 21, 146);
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    cursor: pointer; 
+    position: relative; 
+    left: 2%; 
+    top: 2vw; 
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+
+@media (min-width: 1200px) {
+    .contenedor-Supremo{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 8rem;  
+         
+    }
+    .contenedor_reglas{
+        margin-top: 3rem;
+    }
+    .Img_reglas {
+  
+    border-radius: 5px;
+     }
+
+    .Reglas_estilos {
+       border-radius: 5px;
+    
+    }
+   }
+
+    @media (min-width: 350px) {
+   .text-principal {
+    
+    font-size: 40px;
+   
+}
+   .name-principal{ 
+    
+    font-size: 60px;
+   }
+
+    .Img_reglas {
+        max-width: auto;
+         display: block;
+         margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+     }
+     
+     }
+     .Listo {
+        margin-bottom: 4rem;
+        margin-bottom: 4rem;
+}
+    
+    .contenedor_title h1{
+         text-align: center;
+    }
+    .contenedor-Supremo{
+         max-width: 1200px;
+         width: 100%;
+         margin: 0 auto;
+    
+      
+    }
+  
+ 
+    
+
