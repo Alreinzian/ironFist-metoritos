@@ -44,7 +44,7 @@ body {
 .principal {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
-    
+   
 
 }
 .text-principal {
@@ -153,6 +153,29 @@ body {
     font-size: 20px;
     font-family: 'Inconsolata', monospace;
 }
+.logo{
+    
+    display:grid ;
+    grid-template-columns: repeat(2, 5fr);
+    gap:0.5px;
+    top: 0.5px;
+    left: 15px;
+    width: 100px;
+    height: 80px;
+
+}
+.logo h2{
+    margin-top: 2rem;
+   text-align: center;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 12px;
+}
+.logo_fist{
+     width: 80px;
+    height: 80px;
+    
+}
+
 
 
 
