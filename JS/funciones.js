@@ -1,17 +1,17 @@
-function Mover() {//TRANSICION DE LA PRIMERA SECCION A LA SEGUNDA
-    var contenedor = document.getElementById("Seccion_01")
-    contenedor.style.top = "-100%"
-    contenedor.style.transition = "2s"
-    function Desaparecer(){
-    var contenedor = document.getElementById("Seccion_01")
-    var Reglas = document.getElementById("Reglas")
 
-    Reglas.style.top = "3%"
-    Reglas.style.transition = "1s"
-    contenedor.style.display = "none"
+Narracion = 1
+document.getElementById("button_narracion").addEventListener('click',  Iniciar_narracion)
 
-
+function Iniciar_narracion(){
+    if(Narracion == 1){
+    document.getElementById("narracion").play()
+    document.getElementById("Play").style.display = "none"
+    document.getElementById("Pause").style.display = "table"
+    Narracion = 2}
+    else{
+        document.getElementById("narracion").pause()
+        document.getElementById("Play").style.display = "table"
+        document.getElementById("Pause").style.display = "none"
+        Narracion = 1
     }
-    setTimeout(Desaparecer,1090)
-
 }
