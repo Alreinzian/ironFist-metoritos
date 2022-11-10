@@ -29,7 +29,8 @@ body {
     background: transparent; 
     border: 3px solid white; 
     position: relative;
-    left: 44%; top: -10%; 
+    left: 44%; 
+    top: -10%; 
     cursor: pointer;
 }
 .contenedor_title a{
@@ -81,18 +82,16 @@ body {
 }
 .boton-principal {
     text-align: center;
-  
     width: 200px; 
     height: 60px; 
-    background: rgb(144, 90, 196); /*Este es el boton de JUGAR*/
+    background: rgb(144, 90, 196); 
     cursor: pointer;
     color: white; 
     border-radius: 5px; 
     box-decoration-break:slice;
     border:none;
-    margin-left: auto; 
-    margin-right: auto; 
-    margin-top: 1rem; }
+    margin: 1rem auto 0 auto;
+   }
 /*Sección 1*/
 
 .Seccion_01{
@@ -126,11 +125,12 @@ body {
 }
 
 .Reglas_estilos {
-    margin-top: 2rem;
+    
+    margin-top: 1.5rem;
     background: rgba(248, 248, 248, 0.521); 
     color: black; 
     border: 0.19vw solid black;  
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 8px;
     
     
@@ -153,27 +153,76 @@ body {
     border-radius: 10px;
    
 }
+
 .botones_historia{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, auto);
     column-gap: 0.5rem;
+   
+ 
+   
 }
 
+.botones_historia a{
+    text-decoration: none;
+    color: white;
+    
+   
+    
+}
+
+.boton_historia {
+    margin: 5rem auto  5rem auto;
+    border-radius: 5px;
+    width: 180px; 
+    height: 70px; 
+    background: rgb(144, 90, 196);
+    border: 0px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.button_narracion{    
+    margin-top: 0.5rem;
+    width: 55px;
+    height: 35px;     
+    background: black;
+    color: white;
+    border-radius: 10px;
+   
+       
+}    
+.contenedor_historia{
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+
+
 /* Fin de la Sección historia*/
-.Listo {
+.boton_reglas {
     border-radius: 5px;
     width: 150px; 
     height: 60px; 
-    background: rgb(100, 21, 146);
+    background: rgb(144, 90, 196);
     display: flex; 
     align-items: center; 
     justify-content: center; 
     cursor: pointer; 
-    position: relative; 
     left: 2%; 
     top: 2vw; 
     font-size: 20px;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boton_reglas a{
+    text-decoration: none;
+    color: white;
 }
 .logo{
     
@@ -203,7 +252,7 @@ body {
 
 @media (min-width: 1200px) {
     .contenedor-Supremo{
-        
+        margin-top: 20px;        
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 8rem;  
@@ -220,7 +269,7 @@ body {
     .contenedor_reglas{
         margin-top: 3rem;
     }
-    .Img_reglas {
+    .Img_reglas ,.Img_historia {
   
     border-radius: 5px;
      }
@@ -236,16 +285,15 @@ body {
     
     font-size: 40px;
    
-}
+   }
    .name-principal{ 
-    
     font-size: 60px;
    }
 
-    .Img_reglas {
+    .Img_reglas, .Img_historia {
         max-width: auto;
-         display: block;
-         margin-left: auto;
+        display: block;
+        margin-left: auto;
         margin-right: auto;
         border-radius: 5px;
      }
