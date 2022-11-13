@@ -101,8 +101,8 @@ function JUEGO(){
         //FUNCION QUE UNICAMENTE AUMENTA PUNTOS Y RESETEA LAS VARIABLES AL LLEGAR A CIERTO LIMITE
         function Aumentar_Puntos(){
             Puntaje++;
-            document.getElementById("Puntaje").innerHTML = Puntaje + "&nbsp;/&nbsp;20"
-            if(Puntaje == 5){
+            document.getElementById("Puntaje").innerHTML = Puntaje + "&nbsp;/&nbsp;"+PuntajeNivel1
+            if(Puntaje == PuntajeNivel1){
                 Puntaje = 0 
                 Tiempo = 71
 
@@ -112,7 +112,7 @@ function JUEGO(){
                 document.getElementById("NIVEL_01").style.display = "none"
                 document.getElementById("NIVEL_02").style.display = "block"}
                 document.getElementById("Tiempo").innerHTML = 70
-                document.getElementById("Puntaje").innerHTML = 0+"&nbsp;/&nbsp;"+27
+                document.getElementById("Puntaje").innerHTML = 0+"&nbsp;/&nbsp;"+PuntajeNivel2
                 document.getElementById("Triunfo").play()
                 document.getElementById("Fondo_Ciberpunk").pause()
                 document.getElementById("Puntos_sound").pause()
