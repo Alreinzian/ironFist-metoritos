@@ -27,6 +27,8 @@ Tiempo = 71 //VARIBLE DE INICIO TIEMPO
 Puntaje = 0 //VARIABLE DE INICIO PUNTOS
 PuntajeNivel1 = 20
 PuntajeNivel2 = 10
+Distancia1 = 80
+Distancia2 = 80
 
 
 //FUNCION DE NARRACIONES
@@ -157,7 +159,6 @@ function JUEGO(){
 
         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 1 A LA TIERRA 
         function Metiorito_Direccion(){
-            Distancia1 = 80
             Altura1 = Math.round(Math.random()* 450)
 
             document.getElementById("Meteiorito").style.left = Distancia1 + "%"
@@ -169,7 +170,6 @@ function JUEGO(){
 
         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 2 A LA TIERRA         
         function Metiorito_Direccion2(){
-            Distancia2 = 80
             Altura2 = Math.round(Math.random()* 450)
 
             document.getElementById("Meteiorito2").style.left = Distancia2 + "%"
@@ -334,7 +334,6 @@ function JUEGO(){
 
                         
                         function Metiorito_Direccion(){
-                            Distancia1 = 80
                             Altura1 = Math.round(Math.random()* 450)
                 
                             document.getElementById("Meteiorito").style.left = Distancia1 + "%"
@@ -346,7 +345,6 @@ function JUEGO(){
                 
                         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 2 A LA TIERRA         
                         function Metiorito_Direccion2(){
-                            Distancia2 = 80
                             Altura2 = Math.round(Math.random()* 450)
                 
                             document.getElementById("Meteiorito2").style.left = Distancia2 + "%"
