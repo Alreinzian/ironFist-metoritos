@@ -217,12 +217,12 @@ function JUEGOlvl3() {
     //ESTA FUNCION SE ENCARGA DE ALERTARTE UNA VEZ EL METEORITO CRUZE LA LINEA CON UN PERDISTE
     //TAMBIEN RESETEA LOS VALORES Y LLEVA A LOS METEORITOS FUERA DEL MAPA DE MANERA INSTANTANEA
     function perdistelvl3() {
-        if ((document.getElementById("Meteoritolvl3").offsetLeft > 630) ||
-            (document.getElementById("Meteorito2lvl3").offsetLeft > 630) ||
-            (document.getElementById("Meteorito3lvl3").offsetLeft > 630) ||
-            (document.getElementById("Meteorito4lvl3").offsetLeft > 630)) {
+        if ((document.getElementById("Meteoritolvl3").offsetLeft > 600) ||
+            (document.getElementById("Meteorito2lvl3").offsetLeft > 600) ||
+            (document.getElementById("Meteorito3lvl3").offsetLeft > 600) ||
+            (document.getElementById("Meteorito4lvl3").offsetLeft > 600)) {
 
-                alert("YA ES DEMASIADO TARDE LOS METIORITOS DESTRUYERON GRAN PARTE DEL CONTINENTE LO MEJOR ES ESPERAR LO PEOR")
+                alert("YA ES DEMASIADO TARDE, LOS METEORITOS ESTAN DEMASIADO CERCA LA DESTRUCCION ES INMINENTE")
             document.getElementById("Perdiste_sound").play()
 
             document.getElementById("Meteoritolvl3").style.left = "-70%"

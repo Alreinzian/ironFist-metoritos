@@ -167,9 +167,9 @@ function JUEGOlvl2(){
         //ESTA FUNCION SE ENCARGA DE ALERTARTE UNA VEZ EL METIORITO CRUZE LA LINEA CON UN PERDISTE
         //TAMBIEN RESETEA LOS VALORES Y LLEVA A LOS METIORITOS FUERA DEL MAPA DE MANERA INSTANTANEA
         function perdistelvl2 (){
-            if((document.getElementById("Meteioritolvl2").offsetLeft > 630) ||
-            (document.getElementById("Meteiorito2lvl2").offsetLeft > 630) ||
-            (document.getElementById("Meteiorito3lvl2").offsetLeft > 630))
+            if((document.getElementById("Meteioritolvl2").offsetLeft > 600) ||
+            (document.getElementById("Meteiorito2lvl2").offsetLeft > 600) ||
+            (document.getElementById("Meteiorito3lvl2").offsetLeft > 600))
             
             {
                 document.getElementById("Perdiste_sound").play()
