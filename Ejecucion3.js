@@ -8,19 +8,19 @@ PuntajemMaximoNivel3 = 30
 //PARA QUE EL JUEGO INICIE UNA VEZ SE PRESIONE JUGAR
 function JUEGOlvl3() {
 
-    //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
-    function Tiempo_Disminurlvl3() { 
-        if (Puntajelvl3<PuntajemMaximoNivel3){
-            Tiempolvl3--;
-        }
-        document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
-        if (Tiempolvl3 == 0) {
-            Tiempolvl3 = 51
-            Puntajelvl3 = 0
-            alert("Se te ha acabado el tiempo")
-        }
-    }
-    Restar_Tiempolvl3 = setInterval(Tiempo_Disminurlvl3, 1000)
+    // //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
+    // function Tiempo_Disminurlvl3() { 
+    //     if (Puntajelvl3<PuntajemMaximoNivel3){
+    //         Tiempolvl3--;
+    //     }
+    //     document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
+    //     if (Tiempolvl3 == 0) {
+    //         Tiempolvl3 = 51
+    //         Puntajelvl3 = 0
+    //         alert("Se te ha acabado el tiempo")
+    //     }
+    // }
+    // Restar_Tiempolvl3 = setInterval(Tiempo_Disminurlvl3, 1000)
 
     //AÑADIMOS LA FUNCION AUMENTAR PUNTOS AL PASAR EL CURSOR SOBRE LOS METEORITOS
     document.getElementById("Meteoritolvl3").addEventListener('mouseover', Aumentar_Puntoslvl3)

@@ -20,14 +20,20 @@ Swal.fire({
 
 
 
-Tiempo = 71 //VARIBLE DE INICIO TIEMPO
+// Tiempo = 71 //VARIBLE DE INICIO TIEMPO
 Puntaje = 0 //VARIABLE DE INICIO PUNTOS
 PuntajeNivel1 = 10
 PuntajeNivel2 = 20
 Distancia1 = 80
 Distancia2 = 80
 
+// document.getElementById("TextTiempolvl1").style.display = "none"
+// document.getElementById("TextTiempolvl2").style.display = "none"
+// document.getElementById("TextTiempolvl3").style.display = "none"
 
+// document.getElementById("Tiempo").style.display = "none"
+// document.getElementById("Tiempolvl2").style.display = "none"
+// document.getElementById("Tiempolvl3").style.display = "none"
 //FUNCION DE NARRACIONES
 
 Narracion = 1
@@ -79,20 +85,20 @@ Graficos = 1
 //PARA QUE EL JUEGO INICIE UNA VEZ SE PRESIONE JUGAR
 function JUEGO(){
 
-    function Tiempo_Disminur(){ //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
-        if(Puntaje<PuntajeNivel1){
-            Tiempo--;
-        }
+    // function Tiempo_Disminur(){ //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
+    //     if(Puntaje<PuntajeNivel1){
+    //         Tiempo--;
+    //     }
         
-        document.getElementById("Tiempo").innerHTML = Tiempo
-        if(Tiempo == 0){
-            Tiempo = 71
-            Puntaje = 0
-            document.getElementById("Perdiste_sound").play()
-            alert("Lo lamento perdiste")} }
+    //     document.getElementById("Tiempo").innerHTML = Tiempo
+    //     if(Tiempo == 0){
+    //         Tiempo = 71
+    //         Puntaje = 0
+    //         document.getElementById("Perdiste_sound").play()
+    //         alert("Lo lamento perdiste")} }
 
     
-        Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
+    //     Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
 
         //AÑADIMOS LA FUNCION AUMENTAR PUNTOS AL PASAR EL CURSOR SOBRE LOS METIORITOS
         document.getElementById("Meteiorito").addEventListener('mouseover', Aumentar_Puntos)
@@ -105,15 +111,15 @@ function JUEGO(){
             document.getElementById("Puntaje").innerHTML = Puntaje + "&nbsp;/&nbsp;"+PuntajeNivel1
             if(Puntaje == PuntajeNivel1){
                 Puntaje = 0 
-                Tiempo = 71
+                //Tiempo = 71
 
 
                 document.getElementById("NEXT").addEventListener('click', Habilitar_Siguienten_LVL)
                 function Habilitar_Siguienten_LVL(){
                 document.getElementById("NIVEL_01").style.display = "none"
                 document.getElementById("NIVEL_02").style.display = "block"}
-                document.getElementById("Tiempo").innerHTML = 70
-                document.getElementById("Puntaje").innerHTML = 0+"&nbsp;/&nbsp;"+PuntajeNivel2
+                //document.getElementById("Tiempo").innerHTML = 70
+                //document.getElementById("Puntaje").innerHTML = 0+"&nbsp;/&nbsp;"+PuntajeNivel2
                 document.getElementById("Triunfo").play()
                 document.getElementById("Fondo_Ciberpunk").pause()
                 document.getElementById("Puntos_sound").pause()
@@ -124,7 +130,7 @@ function JUEGO(){
 
                     clearInterval(Reanudar_trayectoria)
                     clearInterval(Reanudar_trayectoria2)
-                    clearInterval(Restar_Tiempo)
+                    // clearInterval(Restar_Tiempo)
 
                     document.getElementById("Meteiorito").style.left = "-70%"
                     document.getElementById("Meteiorito").style.transition = "0s"
@@ -223,7 +229,7 @@ function JUEGO(){
                 document.getElementById("Meteiorito2").style.left = "-70%"
                 document.getElementById("Meteiorito2").style.transition = "0s"
                 
-                Tiempo = 71
+                // Tiempo = 71
                 Puntaje = 0 }
         
             else {
@@ -285,8 +291,8 @@ function JUEGO(){
                         
                         document.getElementById("Fondo_Ciberpunk").pause()
                         document.getElementById("Pausa_Pantalla").style.display = "table"
-                        clearInterval(Restar_Tiempo)//BORRAMOS LA FUNCION DE TIEMPO
-                        document.getElementById("Tiempo").innerHTML = Tiempo
+                        // clearInterval(Restar_Tiempo)//BORRAMOS LA FUNCION DE TIEMPO
+                        // document.getElementById("Tiempo").innerHTML = Tiempo
                         clearInterval(Reanudar_trayectoria2)
                         clearInterval(Reanudar_trayectoria)
 
@@ -304,25 +310,28 @@ function JUEGO(){
                             clearInterval(Pusae_offf) //BORRAMOS LA FUNCION, PARA QUE EL REANUDAR PUEDA EJECUTARSE DE NUEVO
                             document.getElementById("Pausa_Pantalla").style.display = "none"
                             document.getElementById("Fondo_Ciberpunk").play()
-                            function Tiempo_Disminur(){//VOLVEMOS A CREAR LA FUNCION DE TIEMPO PARA QUE REANUEDE EL CONTEO
-                                Tiempo--;
-                                document.getElementById("Tiempo").innerHTML = Tiempo
-                                if(Tiempo == 0){
-                                    Tiempo = 71
-                                    Puntaje = 0
-                                document.getElementById("Perdiste_sound").play()    
-                                alert("Lo lamento perdiste")
-                                document.getElementById("Meteiorito").style.left = "-70%"
-                                document.getElementById("Meteiorito").style.transition = "0s" //CREAR UNA FUNCION EN BASE A ESTO Y PASAR COMO REANUDAR EN GANASTE
+                            document.getElementById("Meteiorito").style.transition = "2.4s"
+                            document.getElementById("Meteiorito2").style.transition = "2.4s"
+                            // function Tiempo_Disminur(){//VOLVEMOS A CREAR LA FUNCION DE TIEMPO PARA QUE REANUEDE EL CONTEO
+                            //     Tiempo--;
+                            //     document.getElementById("Tiempo").innerHTML = Tiempo
+                            //     if(Tiempo == 0){
+                            //         Tiempo = 71
+                            //         Puntaje = 0
+                            //     document.getElementById("Perdiste_sound").play()    
+                            //     alert("Lo lamento perdiste")
+                            //     document.getElementById("Meteiorito").style.left = "-70%"
+                            //     document.getElementById("Meteiorito").style.transition = "0s" //CREAR UNA FUNCION EN BASE A ESTO Y PASAR COMO REANUDAR EN GANASTE
                 
-                                document.getElementById("Meteiorito2").style.left = "-70%"
-                                document.getElementById("Meteiorito2").style.transition = "0s"}
+                            //     document.getElementById("Meteiorito2").style.left = "-70%"
+                            //     document.getElementById("Meteiorito2").style.transition = "0s"}
                                 
-                                else{
-                                    document.getElementById("Meteiorito").style.transition = "2.4s"
-                                    document.getElementById("Meteiorito2").style.transition = "2.4s"}}
+                            //     else{
+                            //         document.getElementById("Meteiorito").style.transition = "2.4s"
+                            //         document.getElementById("Meteiorito2").style.transition = "2.4s"}}
+                                    
 
-                        Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
+                        //Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
         
                         document.getElementById("Meteiorito").style.left = Distancia1 + "%"
                         document.getElementById("Meteiorito").style.top = Altura1 + "px"
