@@ -1,7 +1,3 @@
-
-
-
-
 Tiempolvl2 = 61 //VARIBLE DE INICIO TIEMPO
 Puntajelvl2 = 0 //VARIABLE DE INICIO PUNTOS
 
