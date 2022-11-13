@@ -25,7 +25,9 @@ Swal.fire({
 
 Tiempo = 71 //VARIBLE DE INICIO TIEMPO
 Puntaje = 0 //VARIABLE DE INICIO PUNTOS
-
+PuntajeNivel1 = 20
+PuntajeNivel2 = 10
+PuntajeNivel3 = 5
 
 
 //FUNCION DE NARRACIONES
@@ -99,7 +101,7 @@ function JUEGO(){
         //FUNCION QUE UNICAMENTE AUMENTA PUNTOS Y RESETEA LAS VARIABLES AL LLEGAR A CIERTO LIMITE
         function Aumentar_Puntos(){
             Puntaje++;
-            document.getElementById("Puntaje").innerHTML = Puntaje + "&nbsp;/&nbsp;5"
+            document.getElementById("Puntaje").innerHTML = Puntaje + "&nbsp;/&nbsp;20"
             if(Puntaje == 5){
                 Puntaje = 0 
                 Tiempo = 71
