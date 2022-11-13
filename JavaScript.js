@@ -1,10 +1,10 @@
 
 
 
-/*Alert Screen*/
+/*Function-Alert Screen*/
 
 Swal.fire({
-    title : '¿Preparado para salvar el mundo? <br><br> <img src="IMG/planeta_tierra.png" width = "120px"><br>',
+    title : '¿Preparado para salvar el mundo? <br><br> <img src="../IMG/planeta_tierra.png" width = "120px"><br>',
     html: 'IRON FIST, es un juego que mejorara tus reflejos a medida que pases de nivel, retandote cada vez mas a medida que avances y desbloqueando grandes logros al final de cada nivel, esperamos te diviertas y disfrutes de este gran juego   ',
     icon: 'sucess',
     confirmButtonText: 'ESTOY PREPARADO',
@@ -19,8 +19,10 @@ Swal.fire({
     allowEscapeKey: false,
     allowEnterkey: false,
     stopKeydownPropagation: false,
-    });
-
+    }
+    
+);
+/*Function-Alert Screen*/
 
 
 Tiempo = 71 //VARIBLE DE INICIO TIEMPO
@@ -372,56 +374,56 @@ function JUEGO(){
 
 
 
-function Mover() {//TRANSICION DE LA PRIMERA SECCION A LA SEGUNDA
-    var contenedor = document.getElementById("Seccion_01")
-    contenedor.style.top = "-100%"
-    contenedor.style.transition = "2s"
-    function Desaparecer(){
-    var contenedor = document.getElementById("Seccion_01")
-    var Reglas = document.getElementById("Reglas")
+// function Mover() {//TRANSICION DE LA PRIMERA SECCION A LA SEGUNDA
+//     var contenedor = document.getElementById("Seccion_01")
+//     contenedor.style.top = "-100%"
+//     contenedor.style.transition = "2s"
+//     function Desaparecer(){
+//     var contenedor = document.getElementById("Seccion_01")
+//     var Reglas = document.getElementById("Reglas")
 
-    Reglas.style.top = "3%"
-    Reglas.style.transition = "1s"
-    contenedor.style.display = "none"
-
-
-    }
-    setTimeout(Desaparecer,1090)
-
-}
+//     Reglas.style.top = "3%"
+//     Reglas.style.transition = "1s"
+//     contenedor.style.display = "none"
 
 
-function Mover_2(){
-    var Reglas_Sacar = document.getElementById("Reglas") 
+//     }
+//     setTimeout(Desaparecer,1090)
+
+// }
 
 
-    Reglas_Sacar.style.top = "-100%"
-    Reglas_Sacar.style.transition = "1.4s"
+// function Mover_2(){
+//     var Reglas_Sacar = document.getElementById("Reglas") 
+
+
+//     Reglas_Sacar.style.top = "-100%"
+//     Reglas_Sacar.style.transition = "1.4s"
 
 
 
-    function Desaparecer2(){
-    var Reglas_Sacar = document.getElementById("Reglas")
-    var contenedor_2 = document.getElementById("Seccion_2")
-    var imagen = document.getElementById("Imagen")
-    var mensaje = document.getElementById("Mensaje")
-    var titulo = document.getElementById("Titulo_historia")
+//     function Desaparecer2(){
+//     var Reglas_Sacar = document.getElementById("Reglas")
+//     var contenedor_2 = document.getElementById("Seccion_2")
+//     var imagen = document.getElementById("Imagen")
+//     var mensaje = document.getElementById("Mensaje")
+//     var titulo = document.getElementById("Titulo_historia")
  
-    Reglas_Sacar.style.display = "none"
-    contenedor_2.style.top = "0%"
+//     Reglas_Sacar.style.display = "none"
+//     contenedor_2.style.top = "0%"
 
-    imagen.style.left = "2%"
-    imagen.style.transition = "2s"
-    mensaje.style.right = "2%"
-    mensaje.style.transition = "2s"
-    titulo.style.left = "2%"
-    titulo.style.transition = "1s"
-    }
-    setTimeout(Desaparecer2, 1260)
+//     imagen.style.left = "2%"
+//     imagen.style.transition = "2s"
+//     mensaje.style.right = "2%"
+//     mensaje.style.transition = "2s"
+//     titulo.style.left = "2%"
+//     titulo.style.transition = "1s"
+//     }
+//     setTimeout(Desaparecer2, 1260)
 
 
 
-}
+// }
 
 
 function Mover_3 (){//TRANSICION DE LA SEGUNDA SECCION A LA TERCERA 

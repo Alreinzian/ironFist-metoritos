@@ -1,0 +1,16 @@
+#modo{
+    width:8px;
+    font-size: 30px;
+    margin-left: 20px;
+    cursor:pointer;
+    position: relative;
+
+}
+.dark{
+    background-image: url(../assets/images/Fondo_Espacio2.jpg);
+   
+}
+.dark #modo{
+    color: orange;
+
+}

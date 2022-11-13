@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/dark.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--iMPORTE UN TIPO DE LETA-->
@@ -16,27 +17,42 @@
     <title>Juegos</title>
 </head>
 
-<body>
-    
-
-
-    <main class="Seccion_01" id="Seccion_01">
-        
-        <div class="Contenedor_RC" id="Contenedor_RC" onclick="Graficos_fondo()">
-           
-        </div>
-        <div class="principal">
-            <h1 class="name-principal">IRON FIST</h1>
-            <h1 class="text-principal">¿LISTO PARA DEFENDER<br> EL PLANETA?</h1>
+<body class="">
+    <header>
+        <nav class="menu">
+               <div class="logo">
+                   <a href="home.html">
+                       <img class="logo_fist" src="assets/images/logo-fist.png" alt="">
+                   </a>
+                   <h2>Home</h2>
+                   
+               </div>
+               <div class="modo" id="modo">
+                   <i class="fas fa-toggle-on"></i>
+               </div>
             
-        </div>
-        <div class="boton-principal" id="Juego" onclick="Mover()">
-            <a href="rules.html">
-                <h1>Jugar</h1>
-            </a>
-        </div>
-        
-    </main>
+        </nav>
+    </header>
+ 
+     
+   
+    <section id="Seccion_suprema" class="Contenedor_Supremo">
+        <main class="Seccion_01" id="Seccion_01">
+
+
+            <div class="principal">
+                <h1 class="name-principal">Meteor Impact</h1>
+                <h1 class="text-principal">¿LISTO PARA DEFENDER<br> EL PLANETA?</h1>
+
+            </div>
+            <div class="boton-principal" id="Juego" onclick="Mover()">
+                <a href="views/rules.html">
+                    <h1>Jugar</h1>
+                </a>
+            </div>
+
+        </main>
+    </section>
     <!--llamado al script js-->
     <script src="JS/funciones.js"></script>
 
