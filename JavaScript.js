@@ -27,7 +27,6 @@ Tiempo = 71 //VARIBLE DE INICIO TIEMPO
 Puntaje = 0 //VARIABLE DE INICIO PUNTOS
 PuntajeNivel1 = 20
 PuntajeNivel2 = 10
-PuntajeNivel3 = 5
 
 
 //FUNCION DE NARRACIONES
@@ -213,8 +212,8 @@ function JUEGO(){
         //ESTA FUNCION SE ENCARGA DE ALERTARTE UNA VEZ EL METIORITO CRUZE LA LINEA CON UN PERDISTE
         //TAMBIEN RESETEA LOS VALORES Y LLEVA A LOS METIORITOS FUERA DEL MAPA DE MANERA INSTANTANEA
         function perdiste (){
-            if((document.getElementById("Meteiorito").offsetLeft > 630) ||
-            (document.getElementById("Meteiorito2").offsetLeft > 630)) {
+            if((document.getElementById("Meteiorito").offsetLeft > 650) ||
+            (document.getElementById("Meteiorito2").offsetLeft > 650)) {
 
                 document.getElementById("Perdiste_sound").play()
                 alert("YA ES DEMASIADO TARDE, LOS METEORITOS DESTRUYERON GRAN PARTE DEL CONTINENTE Y LO MEJOR ES ESPERAR LO PEOR")

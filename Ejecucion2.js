@@ -5,7 +5,8 @@
 Tiempolvl2 = 61 //VARIBLE DE INICIO TIEMPO
 Puntajelvl2 = 0 //VARIABLE DE INICIO PUNTOS
 
-
+PuntajeMaximoNivel2 = 10
+PuntajeNivel3 = 5
 
 
 
@@ -34,13 +35,13 @@ function JUEGOlvl2(){
         //FUNCION QUE UNICAMENTE AUMENTA PUNTOS Y RESETEA LAS VARIABLES AL LLEGAR A CIERTO LIMITE
         function Aumentar_Puntoslvl2(){
             Puntajelvl2++;
-            document.getElementById("Puntajelvl2").innerHTML = Puntajelvl2 + " / 4"
-            if(Puntajelvl2 == 2){
+            document.getElementById("Puntajelvl2").innerHTML = Puntajelvl2 + " / " + PuntajeMaximoNivel2
+            if(Puntajelvl2 == PuntajeMaximoNivel2){
                 Puntajelvl2 = 0 
                 Tiempolvl2 = 61
 
                 document.getElementById("Tiempolvl2").innerHTML = 60
-                document.getElementById("Puntajelvl2").innerHTML = 0+"&nbsp;/&nbsp;"+34
+                document.getElementById("Puntajelvl2").innerHTML = 0+"&nbsp;/&nbsp;"+PuntajeMaximoNivel2
                 document.getElementById("Fondo_Ciberpunk").pause()
                 document.getElementById("Triunfo").play()
                 document.getElementById("NEXT").addEventListener('click', Habilitar_Siguienten_LVL)
