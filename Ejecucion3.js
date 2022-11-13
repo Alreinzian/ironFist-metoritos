@@ -10,12 +10,14 @@ function JUEGOlvl3() {
 
     //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
     function Tiempo_Disminurlvl3() { 
-        Tiempolvl3--;
+        if (Puntajelvl3<PuntajemMaximoNivel3){
+            Tiempolvl3--;
+        }
         document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
         if (Tiempolvl3 == 0) {
             Tiempolvl3 = 51
             Puntajelvl3 = 0
-            alert("Lo lamento perdiste")
+            alert("Se te ha acabado el tiempo")
         }
     }
     Restar_Tiempolvl3 = setInterval(Tiempo_Disminurlvl3, 1000)
@@ -105,7 +107,7 @@ function JUEGOlvl3() {
 
     //ESTA FUNCION DIRIGE AL PRIMER METEORITO 1 A LA TIERRA 
     function Meteorito_Direccionlvl3() {
-        Distancia1lvl3 = 80
+        Distancia1lvl3 = 70
         Altura1lvl3 = Math.round(Math.random() * 450)
 
         document.getElementById("Meteoritolvl3").style.left = Distancia1lvl3 + "%"
@@ -218,7 +220,8 @@ function JUEGOlvl3() {
         if ((document.getElementById("Meteoritolvl3").offsetLeft > 600) ||
             (document.getElementById("Meteorito2lvl3").offsetLeft > 600) ||
             (document.getElementById("Meteorito3lvl3").offsetLeft > 600) ||
-            (document.getElementById("Meteorito4lvl3").offsetLeft > 600)) {
+            (document.getElementById("Meteorito4lvl3").offsetLeft > 600) && 
+            Puntajelvl3 != PuntajemMaximoNivel3) {
 
                 alert("YA ES DEMASIADO TARDE, LOS METEORITOS ESTAN DEMASIADO CERCA LA DESTRUCCION ES INMINENTE")
             document.getElementById("Perdiste_sound").play()
@@ -347,7 +350,7 @@ function DETENER_JUEGOlvl3() {
                 if (Tiempolvl3 == 0) {
                     Tiempolvl3 = 51
                     Puntajelvl3 = 0
-                    alert("Lo lamento perdiste")
+                    alert("Se te ha acabado el tiempo")
                 }
             }
 
