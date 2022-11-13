@@ -34,8 +34,8 @@ function JUEGOlvl3() {
         Puntajelvl3++;
         document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / "+PuntajemMaximoNivel3
         if (Puntajelvl3 == PuntajemMaximoNivel3) {
-            Puntajelvl3 = 0
-            Tiempolvl3 = 51
+            //Puntajelvl3 = 0
+            //Tiempolvl3 = 51
             function Contactos(){
             Swal.fire({
                 title : 'Felicitaciones por parte del <br> Grupo Omega<br><br><img src="IMG/Logo_Omega.png" width = "120px">',
@@ -76,14 +76,14 @@ function JUEGOlvl3() {
 
             setInterval(Ganaste_Pantallalvl3, 1)
 
-            Tiempolvl3 = 51
-            Puntajelvl3 = 0
+            //Tiempolvl3 = 51
+            //Puntajelvl3 = 0
 
             clearInterval(Intervalo_Dirlvl3)
             clearInterval(Intervalo_Dir2lvl3)
             clearInterval(Intervalo_Dir3lvl3)
             clearInterval(Intervalo_Dir4lvl3)
-            clearInterval(Restar_Tiempolvl3)
+            //clearInterval(Restar_Tiempolvl3)
 
             document.getElementById("Musica_Final").play()
 
@@ -107,16 +107,16 @@ function JUEGOlvl3() {
 
     //ESTA FUNCION DIRIGE AL PRIMER METEORITO 1 A LA TIERRA 
     function Meteorito_Direccionlvl3() {
-        Distancia1lvl3 = 70
+        Distancia1lvl3 = 80
         Altura1lvl3 = Math.round(Math.random() * 450)
 
         document.getElementById("Meteoritolvl3").style.left = Distancia1lvl3 + "%"
         document.getElementById("Meteoritolvl3").style.top = Altura1lvl3 + "px"
-        document.getElementById("Meteoritolvl3").style.transition = "1.9s"
+        //document.getElementById("Meteoritolvl3").style.transition = "1.9s"
     }
 
     setTimeout(Meteorito_Direccionlvl3, 2200)
-    Intervalo_Dirlvl3 = setInterval(Meteorito_Direccionlvl3, 2950)
+    Intervalo_Dirlvl3 = setInterval(Meteorito_Direccionlvl3, 2450)
 
     //ESTA FUNCION DIRIGE AL METEORITO 2 A LA TIERRA         
     function Meteorito_Direccion2lvl3() {
@@ -125,7 +125,7 @@ function JUEGOlvl3() {
 
         document.getElementById("Meteorito2lvl3").style.left = Distancia2lvl3 + "%"
         document.getElementById("Meteorito2lvl3").style.top = Altura2lvl3 + "px"
-        document.getElementById("Meteorito2lvl3").style.transition = "1.9s"
+        //document.getElementById("Meteorito2lvl3").style.transition = "1.9s"
     }
 
     setTimeout(Meteorito_Direccion2lvl3, 2660)
@@ -133,25 +133,25 @@ function JUEGOlvl3() {
 
     //ESTA FUNCION DIRIGE AL METEORITO 3 A LA TIERRA
     function Meteorito_Direccion3lvl3() {
-        Distancia3lvl3 = 80
+        Distancia3lvl3 = 70
         Altura3lvl3 = Math.round(Math.random() * 450)
 
         document.getElementById("Meteorito3lvl3").style.left = Distancia3lvl3 + "%"
         document.getElementById("Meteorito3lvl3").style.top = Altura3lvl3 + "px"
-        document.getElementById("Meteorito3lvl3").style.transition = "1.9s"
+        //document.getElementById("Meteorito3lvl3").style.transition = "1.9s"
     }
 
     setTimeout(Meteorito_Direccion3lvl3, 2900)
-    Intervalo_Dir3lvl3 = setInterval(Meteorito_Direccion3lvl3, 2550)
+    Intervalo_Dir3lvl3 = setInterval(Meteorito_Direccion3lvl3, 2050)
 
     //ESTA FUNCION DIRIGE AL METEORITO 4 A LA TIERRA
     function Meteorito_Direccion4lvl3() {
-        Distancia4lvl3 = 80
+        Distancia4lvl3 = 70
         Altura4lvl3 = Math.round(Math.random() * 450)
 
         document.getElementById("Meteorito4lvl3").style.left = Distancia4lvl3 + "%"
         document.getElementById("Meteorito4lvl3").style.top = Altura4lvl3 + "px"
-        document.getElementById("Meteorito4lvl3").style.transition = "1.9s"
+        //document.getElementById("Meteorito4lvl3").style.transition = "1.9s"
     }
 
     setTimeout(Meteorito_Direccion4lvl3, 3100)
