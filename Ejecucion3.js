@@ -1,9 +1,7 @@
-
-
-
-
 Tiempolvl3 = 51 //VARIBLE DE INICIO TIEMPO
 Puntajelvl3 = 0 //VARIABLE DE INICIO PUNTOS
+
+PuntajemMaximoNivel3 = 5
 
 //CONTENEDOR QUE CONTIENE TOO EL JUEGO
 //DE POR SI ESTA FUNCION NO SE EJECUTA HASTA QUE SE LA LLAMA, MAS ADELANTE LA LLAMAREMOS
@@ -32,14 +30,14 @@ function JUEGOlvl3() {
     //FUNCION QUE UNICAMENTE AUMENTA PUNTOS Y RESETEA LAS VARIABLES AL LLEGAR A CIERTO LIMITE
     function Aumentar_Puntoslvl3() {
         Puntajelvl3++;
-        document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / 4"
-        if (Puntajelvl3 == 1) {
+        document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / "+PuntajemMaximoNivel3
+        if (Puntajelvl3 == PuntajemMaximoNivel3) {
             Puntajelvl3 = 0
             Tiempolvl3 = 51
             function Contactos(){
             Swal.fire({
                 title : 'Felicitaciones por parte del <br> Grupo Omega<br><br><img src="IMG/Logo_Omega.png" width = "120px">',
-                html: '<b class="Aumentar puntos">Sabia que lo lograrias, nos salVaste de la destrucciÓn, pero ahora nos espera otra lucha, esperemos volVerte a ver jugando IRON FIST 2 en un futuro <br><br> CONTACTOS:<br><br> 71727432@certus.edu.pe <br><br> 71663265@certus.edu.pe <br><br> 70845813@certus.edu.pe <br> </b>',
+                html: '<b class="Aumentar puntos">Sabia que lo lograrias, nos salvaste de la destrucciÓn, pero ahora nos espera otra lucha, esperemos volVerte a ver jugando IRON FIST 2 en un futuro <br><br> CONTACTOS:<br><br> 71727432@certus.edu.pe <br><br> 71663265@certus.edu.pe <br><br> 70845813@certus.edu.pe <br> </b>',
                 icon: 'sucess',
                 confirmButtonText: '<span id="Pausear_musica">De acuerdo</span>',
                 width: '50%',
