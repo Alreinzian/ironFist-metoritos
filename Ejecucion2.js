@@ -11,19 +11,19 @@ PuntajeNivel3 = 10
 //PARA QUE EL JUEGO INICIE UNA VEZ SE PRESIONE JUGAR
 function JUEGOlvl2(){
 
-    function Tiempo_Disminurlvl2(){ //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
-        if(Puntajelvl2<PuntajeMaximoNivel2){
-            Tiempolvl2--;
-        }
+    // function Tiempo_Disminurlvl2(){ //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
+    //     if(Puntajelvl2<PuntajeMaximoNivel2){
+    //         Tiempolvl2--;
+    //     }
         
-        document.getElementById("Tiempolvl2").innerHTML = Tiempolvl2
-        if(Tiempolvl2 == 0){
-            Tiempolvl2 = 61
-            Puntajelvl2 = 0
-            alert("El tiempo se agotó, lo lamento, de seguro lo lograrás para la siguiente")} }
+    //     document.getElementById("Tiempolvl2").innerHTML = Tiempolvl2
+    //     if(Tiempolvl2 == 0){
+    //         Tiempolvl2 = 61
+    //         Puntajelvl2 = 0
+    //         alert("El tiempo se agotó, lo lamento, de seguro lo lograrás para la siguiente")} }
 
     
-        Restar_Tiempolvl2 = setInterval(Tiempo_Disminurlvl2, 1000)
+    //    Restar_Tiempolvl2 = setInterval(Tiempo_Disminurlvl2, 1000)
 
         //AÑADIMOS LA FUNCION AUMENTAR PUNTOS AL PASAR EL CURSOR SOBRE LOS METIORITOS
         document.getElementById("Meteioritolvl2").addEventListener('mouseover', Aumentar_Puntoslvl2)
@@ -36,10 +36,10 @@ function JUEGOlvl2(){
             Puntajelvl2++;
             document.getElementById("Puntajelvl2").innerHTML = Puntajelvl2 + " / " + PuntajeMaximoNivel2
             if(Puntajelvl2 == PuntajeMaximoNivel2){
-                Puntajelvl2 = 0 
-                Tiempolvl2 = 61
+                //Puntajelvl2 = 0 
+                //Tiempolvl2 = 61
 
-                document.getElementById("Tiempolvl2").innerHTML = 60
+                //document.getElementById("Tiempolvl2").innerHTML = 60
                 document.getElementById("Puntajelvl2").innerHTML = 0+"&nbsp;/&nbsp;"+PuntajeMaximoNivel2
                 document.getElementById("Fondo_Ciberpunk").pause()
                 document.getElementById("Triunfo").play()
@@ -96,37 +96,39 @@ function JUEGOlvl2(){
 
         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 1 A LA TIERRA 
         function Metiorito_Direccionlvl2(){
-            Distancia1lvl2 = 80
+            Distancia1lvl2 = 70
             Altura1lvl2 = Math.round(Math.random()* 450)
 
             document.getElementById("Meteioritolvl2").style.left = Distancia1lvl2 + "%"
             document.getElementById("Meteioritolvl2").style.top = Altura1lvl2 + "px"}
 
             Activador_iniciallvl2 = setTimeout(Metiorito_Direccionlvl2, 3500)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-            Reanudar_trayectorialvl2 = setInterval(Metiorito_Direccionlvl2, 2030)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
+            Reanudar_trayectorialvl2 = setInterval(Metiorito_Direccionlvl2, 2750)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
 
 
         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 2 A LA TIERRA         
         function Metiorito_Direccion2lvl2(){
-            Distancia2lvl2 = 80
+            Distancia2lvl2 = 70
             Altura2lvl2 = Math.round(Math.random()* 450)
 
             document.getElementById("Meteiorito2lvl2").style.left = Distancia2lvl2 + "%"
-            document.getElementById("Meteiorito2lvl2").style.top = Altura2lvl2 + "px"}
+            document.getElementById("Meteiorito2lvl2").style.top = Altura2lvl2 + "px"
+        }
 
-            Activador_inicial2lvl2 = setTimeout(Metiorito_Direccion2lvl2, 3000)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-            Reanudar_trayectoria2lvl2 = setInterval(Metiorito_Direccion2lvl2, 2750)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
+        Activador_inicial2lvl2 = setTimeout(Metiorito_Direccion2lvl2, 2800)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
+        Reanudar_trayectoria2lvl2 = setInterval(Metiorito_Direccion2lvl2, 2450)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
 
             //ESTA FUNCION DIRIGE AL PRIMER METIORITO 3 A LA TIERRA
-            function Metiorito_Direccion3lvl2(){
-                Distancia3lvl2 = 80
+        function Metiorito_Direccion3lvl2(){
+                Distancia3lvl2 = 70
                 Altura3lvl2 = Math.round(Math.random()* 450)
     
-                document.getElementById("Meteiorito3lvl2").style.left = Distancia3lvl2 + "%"
-                document.getElementById("Meteiorito3lvl2").style.top = Altura3lvl2 + "px"}
+            document.getElementById("Meteiorito3lvl2").style.left = Distancia3lvl2 + "%"
+            document.getElementById("Meteiorito3lvl2").style.top = Altura3lvl2 + "px"
+        }
     
-            Activador_inicial3lvl2  = setTimeout(Metiorito_Direccion3lvl2, 2200)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-            Reanudar_trayectoria3lvl2 = setInterval(Metiorito_Direccion3lvl2, 2470)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
+        Activador_inicial3lvl2  = setTimeout(Metiorito_Direccion3lvl2, 3000)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
+        Reanudar_trayectoria3lvl2 = setInterval(Metiorito_Direccion3lvl2, 2300)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
        
 
 
@@ -138,7 +140,7 @@ function JUEGOlvl2(){
         //ESTA ES LA FUNCION QUE EXPULSA AL METEORITO 1 DE MANERA ALEATORIA FUERA DEL MAPA
         function Explulsarlvl2 (){
             document.getElementById("Puntos_sound").play()
-            Distancialvl2 = "-500"
+            Distancialvl2 = "-600"
             Alturalvl2 = Math.round(Math.random()* 450)
             document.getElementById("Meteioritolvl2").style.left = Distancialvl2 + "px"
             document.getElementById("Meteioritolvl2").style.top = Alturalvl2 + "px"
@@ -148,7 +150,7 @@ function JUEGOlvl2(){
         //ESTA ES LA FUNCION QUE EXPULSA AL METEORITO 2 DE MANERA ALEATORIA FUERA DEL MAPA
         function Explulsar2lvl2 (){
             document.getElementById("Punto2").play()
-            Distancialvl2 = "-500"
+            Distancialvl2 = "-600"
             Alturalvl2 = Math.round(Math.random()* 450)
             document.getElementById("Meteiorito2lvl2").style.left = Distancialvl2 + "px"
             document.getElementById("Meteiorito2lvl2").style.top = Alturalvl2 + "px"
@@ -157,7 +159,7 @@ function JUEGOlvl2(){
          //ESTA ES LA FUNCION QUE EXPULSA AL METEORITO 3 DE MANERA ALEATORIA FUERA DEL MAPA
         function Explulsar3lvl2 (){
             document.getElementById("Punto3").play()
-            Distancialvl2 = "-500"
+            Distancialvl2 = "-600"
             Alturalvl2 = Math.round(Math.random()* 450)
             document.getElementById("Meteiorito3lvl2").style.left = Distancialvl2 + "px"
             document.getElementById("Meteiorito3lvl2").style.top = Alturalvl2 + "px"
@@ -250,8 +252,8 @@ function JUEGOlvl2(){
                         if (Activolvl2 == 1){
                         document.getElementById("Pausa_Pantallalvl2").style.display = "table"
                         document.getElementById("Fondo_Ciberpunk").pause()
-                        clearInterval(Restar_Tiempolvl2)//BORRAMOS LA FUNCION DE TIEMPO
-                        document.getElementById("Tiempolvl2").innerHTML = Tiempolvl2
+                        //clearInterval(Restar_Tiempolvl2)//BORRAMOS LA FUNCION DE TIEMPO
+                        // document.getElementById("Tiempolvl2").innerHTML = Tiempolvl2
                             clearInterval(Reanudar_trayectorialvl2)
                             clearInterval(Reanudar_trayectoria2lvl2)
                             clearInterval(Reanudar_trayectoria3lvl2)
