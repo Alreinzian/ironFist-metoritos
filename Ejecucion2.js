@@ -12,7 +12,10 @@ PuntajeNivel3 = 5
 function JUEGOlvl2(){
 
     function Tiempo_Disminurlvl2(){ //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
-        Tiempolvl2--;
+        if(Puntajelvl2<PuntajeMaximoNivel2){
+            Tiempolvl2--;
+        }
+        
         document.getElementById("Tiempolvl2").innerHTML = Tiempolvl2
         if(Tiempolvl2 == 0){
             Tiempolvl2 = 61

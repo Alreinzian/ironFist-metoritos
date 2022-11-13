@@ -80,7 +80,10 @@ Graficos = 1
 function JUEGO(){
 
     function Tiempo_Disminur(){ //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
-        Tiempo--;
+        if(Puntaje<PuntajeNivel1){
+            Tiempo--;
+        }
+        
         document.getElementById("Tiempo").innerHTML = Tiempo
         if(Tiempo == 0){
             Tiempo = 71
