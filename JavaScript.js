@@ -164,7 +164,7 @@ function JUEGO(){
             document.getElementById("Meteiorito").style.top = Altura1 + "px"}
 
             setTimeout(Metiorito_Direccion, 2000)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-            Reanudar_trayectoria = setInterval(Metiorito_Direccion, 2430)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
+            Reanudar_trayectoria = setInterval(Metiorito_Direccion, 3000)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
 
 
         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 2 A LA TIERRA         
@@ -175,8 +175,8 @@ function JUEGO(){
             document.getElementById("Meteiorito2").style.left = Distancia2 + "%"
             document.getElementById("Meteiorito2").style.top = Altura2 + "px"}
 
-            setTimeout(Metiorito_Direccion2, 2600)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-            Reanudar_trayectoria2 = setInterval(Metiorito_Direccion2, 2350)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
+            setTimeout(Metiorito_Direccion2, 3000)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
+            Reanudar_trayectoria2 = setInterval(Metiorito_Direccion2, 3300)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
 
 
         //AQUI ADJUNTAMOS LA ACCION DE LA FUNCION EXPULZAR AL PASAR SOBRE EL METIORITO
@@ -341,7 +341,7 @@ function JUEGO(){
                             document.getElementById("Meteiorito").style.top = Altura1 + "px"}
                 
                             setTimeout(Metiorito_Direccion, 2000)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-                            Reanudar_trayectoria = setInterval(Metiorito_Direccion, 2430)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
+                            Reanudar_trayectoria = setInterval(Metiorito_Direccion, 3000)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
                 
                 
                         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 2 A LA TIERRA         
@@ -353,7 +353,7 @@ function JUEGO(){
                             document.getElementById("Meteiorito2").style.top = Altura2 + "px"}
                 
                             setTimeout(Metiorito_Direccion2, 2000)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-                            Reanudar_trayectoria2 = setInterval(Metiorito_Direccion2, 2350)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
+                            Reanudar_trayectoria2 = setInterval(Metiorito_Direccion2, 3300)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
 
 
 
