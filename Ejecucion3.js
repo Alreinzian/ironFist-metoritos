@@ -430,3 +430,8 @@ function DETENER_JUEGOlvl3() {
         }
     }
 } //CAMBIAMOS EL VALOR DE NUEVO A 1 PARA QUE AL SIGUIENTE CLICK SE EJECUTE EL PAUSE  S
+
+//funcion para deshabilitar el boton de siguiente en el tercer nivel
+function eliminarBotonSiguienteNivel(){
+    document.getElementById("NEXT").style.display = "none"
+}
