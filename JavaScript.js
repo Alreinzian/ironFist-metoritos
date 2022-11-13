@@ -27,8 +27,8 @@ Tiempo = 71 //VARIBLE DE INICIO TIEMPO
 Puntaje = 0 //VARIABLE DE INICIO PUNTOS
 PuntajeNivel1 = 20
 PuntajeNivel2 = 10
-Distancia1 = 80
-Distancia2 = 80
+Distancia1 = 40
+Distancia2 = 50
 
 
 //FUNCION DE NARRACIONES
