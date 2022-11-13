@@ -110,7 +110,7 @@ function JUEGO(){
             Puntaje++;
             document.getElementById("Puntaje").innerHTML = Puntaje + "&nbsp;/&nbsp;"+PuntajeNivel1
             if(Puntaje == PuntajeNivel1){
-                Puntaje = 0 
+                //Puntaje = 0 
                 //Tiempo = 71
 
 
