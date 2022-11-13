@@ -1,6 +1,3 @@
-
-
-
 /*Alert Screen*/
 
 Swal.fire({
@@ -27,8 +24,8 @@ Tiempo = 71 //VARIBLE DE INICIO TIEMPO
 Puntaje = 0 //VARIABLE DE INICIO PUNTOS
 PuntajeNivel1 = 20
 PuntajeNivel2 = 10
-Distancia1 = 40
-Distancia2 = 50
+Distancia1 = 70
+Distancia2 = 70
 
 
 //FUNCION DE NARRACIONES
@@ -165,7 +162,7 @@ function JUEGO(){
             document.getElementById("Meteiorito").style.top = Altura1 + "px"}
 
             setTimeout(Metiorito_Direccion, 2000)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-            Reanudar_trayectoria = setInterval(Metiorito_Direccion, 3000)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
+            Reanudar_trayectoria = setInterval(Metiorito_Direccion, 2400)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
 
 
         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 2 A LA TIERRA         
@@ -175,7 +172,7 @@ function JUEGO(){
             document.getElementById("Meteiorito2").style.left = Distancia2 + "%"
             document.getElementById("Meteiorito2").style.top = Altura2 + "px"}
 
-            setTimeout(Metiorito_Direccion2, 3000)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
+            setTimeout(Metiorito_Direccion2, 2400)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
             Reanudar_trayectoria2 = setInterval(Metiorito_Direccion2, 3300)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
 
 
@@ -192,7 +189,7 @@ function JUEGO(){
 
             document.getElementById("Meteiorito").style.left = Distancia + "px"
             document.getElementById("Meteiorito").style.top = Altura + "px"
-            document.getElementById("Meteiorito").style.transition = "1.8s"}
+            document.getElementById("Meteiorito").style.transition = "1.5s"}
 
 
         //ESTA ES LA FUNCION QUE EXPULSA AL METIRITO 2 DE MANERA ALEATORIA FUERA DEL MAPA
@@ -203,7 +200,7 @@ function JUEGO(){
     
             document.getElementById("Meteiorito2").style.left = Distancia + "px"
             document.getElementById("Meteiorito2").style.top = Altura + "px"
-            document.getElementById("Meteiorito2").style.transition = "1.8s"}
+            document.getElementById("Meteiorito2").style.transition = "1.5s"}
 
 
 
@@ -340,7 +337,7 @@ function JUEGO(){
                             document.getElementById("Meteiorito").style.top = Altura1 + "px"}
                 
                             setTimeout(Metiorito_Direccion, 2000)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-                            Reanudar_trayectoria = setInterval(Metiorito_Direccion, 3000)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
+                            Reanudar_trayectoria = setInterval(Metiorito_Direccion, 2400)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
                 
                 
                         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 2 A LA TIERRA         
