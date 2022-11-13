@@ -1,8 +1,8 @@
 Tiempolvl2 = 61 //VARIBLE DE INICIO TIEMPO
 Puntajelvl2 = 0 //VARIABLE DE INICIO PUNTOS
 
-PuntajeMaximoNivel2 = 10
-PuntajeNivel3 = 5
+PuntajeMaximoNivel2 = 20
+PuntajeNivel3 = 10
 
 
 

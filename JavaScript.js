@@ -22,10 +22,10 @@ Swal.fire({
 
 Tiempo = 71 //VARIBLE DE INICIO TIEMPO
 Puntaje = 0 //VARIABLE DE INICIO PUNTOS
-PuntajeNivel1 = 20
-PuntajeNivel2 = 10
-Distancia1 = 70
-Distancia2 = 70
+PuntajeNivel1 = 10
+PuntajeNivel2 = 20
+Distancia1 = 80
+Distancia2 = 80
 
 
 //FUNCION DE NARRACIONES
