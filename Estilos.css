@@ -1,15 +1,55 @@
-html body{margin: 0; padding: 0; font-family: sans-serif;}/*RESTABLESCO LA PAGINA, SI MARGEN EN LOS BORDES*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
-#Fondo {background-image: url(IMG/Fondo_Espacio.gif) ; color: white; background-attachment: fixed; background-repeat: no-repeat;
-background-size: 100% 120%;
- }
+body {
+    background-image: url(IMG/Fondo_Espacio.gif);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    color: white; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+}
+
+.logo{
+    
+    display:grid ;
+    grid-template-columns: repeat(2, 5fr);
+    gap:0.5px;
+    top: 0.5px;
+    left: 15px;
+    width: 100px;
+    height: 80px;
+
+}
+.logo h2{
+    margin-top: 2rem;
+   text-align: center;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 12px;
+}
+.logo_fist{
+     width: 80px;
+    height: 80px;
+    
+}
 
 
 /*CONTENEDOR DE TODOS LOS CONTENEDORES*/
 
 
-.Contenedor_Supremo{width: auto; height: 100vh; overflow: hidden;} /*ESTE ES EL CONTENEDOR DONDE SE DESLIZAN TODOS LOS
+.Contenedor_Supremo{
+    width: auto; 
+    height: 100vh; 
+    overflow: hidden;} /*ESTE ES EL CONTENEDOR DONDE SE DESLIZAN TODOS LOS
                                                                     CONTENEDOR*/
 
 /*PRIMERA SECCION------------------------------------------------------------------------------------------------------*/
