@@ -1,6 +1,3 @@
-
-
-
 /*Alert Screen*/
 
 Swal.fire({
@@ -22,12 +19,20 @@ Swal.fire({
 
 
 
-Tiempo = 71 //VARIBLE DE INICIO TIEMPO
+// Tiempo = 71 //VARIBLE DE INICIO TIEMPO
 Puntaje = 0 //VARIABLE DE INICIO PUNTOS
-PuntajeNivel1 = 20
-PuntajeNivel2 = 10
+PuntajeNivel1 = 10
+PuntajeNivel2 = 20
+Distancia1 = 80
+Distancia2 = 80
 
+// document.getElementById("TextTiempolvl1").style.display = "none"
+// document.getElementById("TextTiempolvl2").style.display = "none"
+// document.getElementById("TextTiempolvl3").style.display = "none"
 
+// document.getElementById("Tiempo").style.display = "none"
+// document.getElementById("Tiempolvl2").style.display = "none"
+// document.getElementById("Tiempolvl3").style.display = "none"
 //FUNCION DE NARRACIONES
 
 Narracion = 1
@@ -79,17 +84,20 @@ Graficos = 1
 //PARA QUE EL JUEGO INICIE UNA VEZ SE PRESIONE JUGAR
 function JUEGO(){
 
-    function Tiempo_Disminur(){ //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
-        Tiempo--;
-        document.getElementById("Tiempo").innerHTML = Tiempo
-        if(Tiempo == 0){
-            Tiempo = 71
-            Puntaje = 0
-            document.getElementById("Perdiste_sound").play()
-            alert("Lo lamento perdiste")} }
+    // function Tiempo_Disminur(){ //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
+    //     if(Puntaje<PuntajeNivel1){
+    //         Tiempo--;
+    //     }
+        
+    //     document.getElementById("Tiempo").innerHTML = Tiempo
+    //     if(Tiempo == 0){
+    //         Tiempo = 71
+    //         Puntaje = 0
+    //         document.getElementById("Perdiste_sound").play()
+    //         alert("Lo lamento perdiste")} }
 
     
-        Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
+    //     Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
 
         //AÑADIMOS LA FUNCION AUMENTAR PUNTOS AL PASAR EL CURSOR SOBRE LOS METIORITOS
         document.getElementById("Meteiorito").addEventListener('mouseover', Aumentar_Puntos)
@@ -101,16 +109,16 @@ function JUEGO(){
             Puntaje++;
             document.getElementById("Puntaje").innerHTML = Puntaje + "&nbsp;/&nbsp;"+PuntajeNivel1
             if(Puntaje == PuntajeNivel1){
-                Puntaje = 0 
-                Tiempo = 71
+                //Puntaje = 0 
+                //Tiempo = 71
 
 
                 document.getElementById("NEXT").addEventListener('click', Habilitar_Siguienten_LVL)
                 function Habilitar_Siguienten_LVL(){
                 document.getElementById("NIVEL_01").style.display = "none"
                 document.getElementById("NIVEL_02").style.display = "block"}
-                document.getElementById("Tiempo").innerHTML = 70
-                document.getElementById("Puntaje").innerHTML = 0+"&nbsp;/&nbsp;"+PuntajeNivel2
+                //document.getElementById("Tiempo").innerHTML = 70
+                //document.getElementById("Puntaje").innerHTML = 0+"&nbsp;/&nbsp;"+PuntajeNivel2
                 document.getElementById("Triunfo").play()
                 document.getElementById("Fondo_Ciberpunk").pause()
                 document.getElementById("Puntos_sound").pause()
@@ -121,7 +129,7 @@ function JUEGO(){
 
                     clearInterval(Reanudar_trayectoria)
                     clearInterval(Reanudar_trayectoria2)
-                    clearInterval(Restar_Tiempo)
+                    // clearInterval(Restar_Tiempo)
 
                     document.getElementById("Meteiorito").style.left = "-70%"
                     document.getElementById("Meteiorito").style.transition = "0s"
@@ -156,26 +164,24 @@ function JUEGO(){
 
         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 1 A LA TIERRA 
         function Metiorito_Direccion(){
-            Distancia1 = 80
             Altura1 = Math.round(Math.random()* 450)
 
             document.getElementById("Meteiorito").style.left = Distancia1 + "%"
             document.getElementById("Meteiorito").style.top = Altura1 + "px"}
 
             setTimeout(Metiorito_Direccion, 2000)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-            Reanudar_trayectoria = setInterval(Metiorito_Direccion, 2430)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
+            Reanudar_trayectoria = setInterval(Metiorito_Direccion, 2400)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
 
 
         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 2 A LA TIERRA         
         function Metiorito_Direccion2(){
-            Distancia2 = 80
             Altura2 = Math.round(Math.random()* 450)
 
             document.getElementById("Meteiorito2").style.left = Distancia2 + "%"
             document.getElementById("Meteiorito2").style.top = Altura2 + "px"}
 
-            setTimeout(Metiorito_Direccion2, 2600)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-            Reanudar_trayectoria2 = setInterval(Metiorito_Direccion2, 2350)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
+            setTimeout(Metiorito_Direccion2, 2400)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
+            Reanudar_trayectoria2 = setInterval(Metiorito_Direccion2, 3300)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
 
 
         //AQUI ADJUNTAMOS LA ACCION DE LA FUNCION EXPULZAR AL PASAR SOBRE EL METIORITO
@@ -191,7 +197,7 @@ function JUEGO(){
 
             document.getElementById("Meteiorito").style.left = Distancia + "px"
             document.getElementById("Meteiorito").style.top = Altura + "px"
-            document.getElementById("Meteiorito").style.transition = "1.8s"}
+            document.getElementById("Meteiorito").style.transition = "1.5s"}
 
 
         //ESTA ES LA FUNCION QUE EXPULSA AL METIRITO 2 DE MANERA ALEATORIA FUERA DEL MAPA
@@ -202,7 +208,7 @@ function JUEGO(){
     
             document.getElementById("Meteiorito2").style.left = Distancia + "px"
             document.getElementById("Meteiorito2").style.top = Altura + "px"
-            document.getElementById("Meteiorito2").style.transition = "1.8s"}
+            document.getElementById("Meteiorito2").style.transition = "1.5s"}
 
 
 
@@ -222,7 +228,7 @@ function JUEGO(){
                 document.getElementById("Meteiorito2").style.left = "-70%"
                 document.getElementById("Meteiorito2").style.transition = "0s"
                 
-                Tiempo = 71
+                // Tiempo = 71
                 Puntaje = 0 }
         
             else {
@@ -284,8 +290,8 @@ function JUEGO(){
                         
                         document.getElementById("Fondo_Ciberpunk").pause()
                         document.getElementById("Pausa_Pantalla").style.display = "table"
-                        clearInterval(Restar_Tiempo)//BORRAMOS LA FUNCION DE TIEMPO
-                        document.getElementById("Tiempo").innerHTML = Tiempo
+                        // clearInterval(Restar_Tiempo)//BORRAMOS LA FUNCION DE TIEMPO
+                        // document.getElementById("Tiempo").innerHTML = Tiempo
                         clearInterval(Reanudar_trayectoria2)
                         clearInterval(Reanudar_trayectoria)
 
@@ -303,25 +309,28 @@ function JUEGO(){
                             clearInterval(Pusae_offf) //BORRAMOS LA FUNCION, PARA QUE EL REANUDAR PUEDA EJECUTARSE DE NUEVO
                             document.getElementById("Pausa_Pantalla").style.display = "none"
                             document.getElementById("Fondo_Ciberpunk").play()
-                            function Tiempo_Disminur(){//VOLVEMOS A CREAR LA FUNCION DE TIEMPO PARA QUE REANUEDE EL CONTEO
-                                Tiempo--;
-                                document.getElementById("Tiempo").innerHTML = Tiempo
-                                if(Tiempo == 0){
-                                    Tiempo = 71
-                                    Puntaje = 0
-                                document.getElementById("Perdiste_sound").play()    
-                                alert("Lo lamento perdiste")
-                                document.getElementById("Meteiorito").style.left = "-70%"
-                                document.getElementById("Meteiorito").style.transition = "0s" //CREAR UNA FUNCION EN BASE A ESTO Y PASAR COMO REANUDAR EN GANASTE
+                            document.getElementById("Meteiorito").style.transition = "2.4s"
+                            document.getElementById("Meteiorito2").style.transition = "2.4s"
+                            // function Tiempo_Disminur(){//VOLVEMOS A CREAR LA FUNCION DE TIEMPO PARA QUE REANUEDE EL CONTEO
+                            //     Tiempo--;
+                            //     document.getElementById("Tiempo").innerHTML = Tiempo
+                            //     if(Tiempo == 0){
+                            //         Tiempo = 71
+                            //         Puntaje = 0
+                            //     document.getElementById("Perdiste_sound").play()    
+                            //     alert("Lo lamento perdiste")
+                            //     document.getElementById("Meteiorito").style.left = "-70%"
+                            //     document.getElementById("Meteiorito").style.transition = "0s" //CREAR UNA FUNCION EN BASE A ESTO Y PASAR COMO REANUDAR EN GANASTE
                 
-                                document.getElementById("Meteiorito2").style.left = "-70%"
-                                document.getElementById("Meteiorito2").style.transition = "0s"}
+                            //     document.getElementById("Meteiorito2").style.left = "-70%"
+                            //     document.getElementById("Meteiorito2").style.transition = "0s"}
                                 
-                                else{
-                                    document.getElementById("Meteiorito").style.transition = "2.4s"
-                                    document.getElementById("Meteiorito2").style.transition = "2.4s"}}
+                            //     else{
+                            //         document.getElementById("Meteiorito").style.transition = "2.4s"
+                            //         document.getElementById("Meteiorito2").style.transition = "2.4s"}}
+                                    
 
-                        Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
+                        //Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
         
                         document.getElementById("Meteiorito").style.left = Distancia1 + "%"
                         document.getElementById("Meteiorito").style.top = Altura1 + "px"
@@ -333,26 +342,24 @@ function JUEGO(){
 
                         
                         function Metiorito_Direccion(){
-                            Distancia1 = 80
                             Altura1 = Math.round(Math.random()* 450)
                 
                             document.getElementById("Meteiorito").style.left = Distancia1 + "%"
                             document.getElementById("Meteiorito").style.top = Altura1 + "px"}
                 
                             setTimeout(Metiorito_Direccion, 2000)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-                            Reanudar_trayectoria = setInterval(Metiorito_Direccion, 2430)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
+                            Reanudar_trayectoria = setInterval(Metiorito_Direccion, 2400)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
                 
                 
                         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 2 A LA TIERRA         
                         function Metiorito_Direccion2(){
-                            Distancia2 = 80
                             Altura2 = Math.round(Math.random()* 450)
                 
                             document.getElementById("Meteiorito2").style.left = Distancia2 + "%"
                             document.getElementById("Meteiorito2").style.top = Altura2 + "px"}
                 
                             setTimeout(Metiorito_Direccion2, 2000)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-                            Reanudar_trayectoria2 = setInterval(Metiorito_Direccion2, 2350)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
+                            Reanudar_trayectoria2 = setInterval(Metiorito_Direccion2, 3300)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
 
 
 

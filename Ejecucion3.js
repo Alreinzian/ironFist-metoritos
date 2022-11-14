@@ -1,26 +1,26 @@
-
-
-
-
 Tiempolvl3 = 51 //VARIBLE DE INICIO TIEMPO
 Puntajelvl3 = 0 //VARIABLE DE INICIO PUNTOS
+
+PuntajemMaximoNivel3 = 30
 
 //CONTENEDOR QUE CONTIENE TOO EL JUEGO
 //DE POR SI ESTA FUNCION NO SE EJECUTA HASTA QUE SE LA LLAMA, MAS ADELANTE LA LLAMAREMOS
 //PARA QUE EL JUEGO INICIE UNA VEZ SE PRESIONE JUGAR
 function JUEGOlvl3() {
 
-    //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
-    function Tiempo_Disminurlvl3() { 
-        Tiempolvl3--;
-        document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
-        if (Tiempolvl3 == 0) {
-            Tiempolvl3 = 51
-            Puntajelvl3 = 0
-            alert("Lo lamento perdiste")
-        }
-    }
-    Restar_Tiempolvl3 = setInterval(Tiempo_Disminurlvl3, 1000)
+    // //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
+    // function Tiempo_Disminurlvl3() { 
+    //     if (Puntajelvl3<PuntajemMaximoNivel3){
+    //         Tiempolvl3--;
+    //     }
+    //     document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
+    //     if (Tiempolvl3 == 0) {
+    //         Tiempolvl3 = 51
+    //         Puntajelvl3 = 0
+    //         alert("Se te ha acabado el tiempo")
+    //     }
+    // }
+    // Restar_Tiempolvl3 = setInterval(Tiempo_Disminurlvl3, 1000)
 
     //AÑADIMOS LA FUNCION AUMENTAR PUNTOS AL PASAR EL CURSOR SOBRE LOS METEORITOS
     document.getElementById("Meteoritolvl3").addEventListener('mouseover', Aumentar_Puntoslvl3)
@@ -32,14 +32,14 @@ function JUEGOlvl3() {
     //FUNCION QUE UNICAMENTE AUMENTA PUNTOS Y RESETEA LAS VARIABLES AL LLEGAR A CIERTO LIMITE
     function Aumentar_Puntoslvl3() {
         Puntajelvl3++;
-        document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / 4"
-        if (Puntajelvl3 == 1) {
-            Puntajelvl3 = 0
-            Tiempolvl3 = 51
+        document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / "+PuntajemMaximoNivel3
+        if (Puntajelvl3 == PuntajemMaximoNivel3) {
+            //Puntajelvl3 = 0
+            //Tiempolvl3 = 51
             function Contactos(){
             Swal.fire({
                 title : 'Felicitaciones por parte del <br> Grupo Omega<br><br><img src="IMG/Logo_Omega.png" width = "120px">',
-                html: '<b class="Aumentar puntos">Sabia que lo lograrias, nos salVaste de la destrucciÓn, pero ahora nos espera otra lucha, esperemos volVerte a ver jugando IRON FIST 2 en un futuro <br><br> CONTACTOS:<br><br> 71727432@certus.edu.pe <br><br> 71663265@certus.edu.pe <br><br> 70845813@certus.edu.pe <br> </b>',
+                html: '<b class="Aumentar puntos">Sabia que lo lograrias, nos salvaste de la destrucciÓn, pero ahora nos espera otra lucha, esperemos volVerte a ver jugando IRON FIST 2 en un futuro <br><br> CONTACTOS:<br><br> 71727432@certus.edu.pe <br><br> 71663265@certus.edu.pe <br><br> 70845813@certus.edu.pe <br> </b>',
                 icon: 'sucess',
                 confirmButtonText: '<span id="Pausear_musica">De acuerdo</span>',
                 width: '50%',
@@ -76,14 +76,14 @@ function JUEGOlvl3() {
 
             setInterval(Ganaste_Pantallalvl3, 1)
 
-            Tiempolvl3 = 51
-            Puntajelvl3 = 0
+            //Tiempolvl3 = 51
+            //Puntajelvl3 = 0
 
             clearInterval(Intervalo_Dirlvl3)
             clearInterval(Intervalo_Dir2lvl3)
             clearInterval(Intervalo_Dir3lvl3)
             clearInterval(Intervalo_Dir4lvl3)
-            clearInterval(Restar_Tiempolvl3)
+            //clearInterval(Restar_Tiempolvl3)
 
             document.getElementById("Musica_Final").play()
 
@@ -112,11 +112,11 @@ function JUEGOlvl3() {
 
         document.getElementById("Meteoritolvl3").style.left = Distancia1lvl3 + "%"
         document.getElementById("Meteoritolvl3").style.top = Altura1lvl3 + "px"
-        document.getElementById("Meteoritolvl3").style.transition = "1.9s"
+        //document.getElementById("Meteoritolvl3").style.transition = "1.9s"
     }
 
     setTimeout(Meteorito_Direccionlvl3, 2200)
-    Intervalo_Dirlvl3 = setInterval(Meteorito_Direccionlvl3, 2950)
+    Intervalo_Dirlvl3 = setInterval(Meteorito_Direccionlvl3, 2450)
 
     //ESTA FUNCION DIRIGE AL METEORITO 2 A LA TIERRA         
     function Meteorito_Direccion2lvl3() {
@@ -125,7 +125,7 @@ function JUEGOlvl3() {
 
         document.getElementById("Meteorito2lvl3").style.left = Distancia2lvl3 + "%"
         document.getElementById("Meteorito2lvl3").style.top = Altura2lvl3 + "px"
-        document.getElementById("Meteorito2lvl3").style.transition = "1.9s"
+        //document.getElementById("Meteorito2lvl3").style.transition = "1.9s"
     }
 
     setTimeout(Meteorito_Direccion2lvl3, 2660)
@@ -133,25 +133,25 @@ function JUEGOlvl3() {
 
     //ESTA FUNCION DIRIGE AL METEORITO 3 A LA TIERRA
     function Meteorito_Direccion3lvl3() {
-        Distancia3lvl3 = 80
+        Distancia3lvl3 = 70
         Altura3lvl3 = Math.round(Math.random() * 450)
 
         document.getElementById("Meteorito3lvl3").style.left = Distancia3lvl3 + "%"
         document.getElementById("Meteorito3lvl3").style.top = Altura3lvl3 + "px"
-        document.getElementById("Meteorito3lvl3").style.transition = "1.9s"
+        //document.getElementById("Meteorito3lvl3").style.transition = "1.9s"
     }
 
     setTimeout(Meteorito_Direccion3lvl3, 2900)
-    Intervalo_Dir3lvl3 = setInterval(Meteorito_Direccion3lvl3, 2550)
+    Intervalo_Dir3lvl3 = setInterval(Meteorito_Direccion3lvl3, 2050)
 
     //ESTA FUNCION DIRIGE AL METEORITO 4 A LA TIERRA
     function Meteorito_Direccion4lvl3() {
-        Distancia4lvl3 = 80
+        Distancia4lvl3 = 70
         Altura4lvl3 = Math.round(Math.random() * 450)
 
         document.getElementById("Meteorito4lvl3").style.left = Distancia4lvl3 + "%"
         document.getElementById("Meteorito4lvl3").style.top = Altura4lvl3 + "px"
-        document.getElementById("Meteorito4lvl3").style.transition = "1.9s"
+        //document.getElementById("Meteorito4lvl3").style.transition = "1.9s"
     }
 
     setTimeout(Meteorito_Direccion4lvl3, 3100)
@@ -217,12 +217,13 @@ function JUEGOlvl3() {
     //ESTA FUNCION SE ENCARGA DE ALERTARTE UNA VEZ EL METEORITO CRUZE LA LINEA CON UN PERDISTE
     //TAMBIEN RESETEA LOS VALORES Y LLEVA A LOS METEORITOS FUERA DEL MAPA DE MANERA INSTANTANEA
     function perdistelvl3() {
-        if ((document.getElementById("Meteoritolvl3").offsetLeft > 630) ||
-            (document.getElementById("Meteorito2lvl3").offsetLeft > 630) ||
-            (document.getElementById("Meteorito3lvl3").offsetLeft > 630) ||
-            (document.getElementById("Meteorito4lvl3").offsetLeft > 630)) {
+        if ((document.getElementById("Meteoritolvl3").offsetLeft > 600) ||
+            (document.getElementById("Meteorito2lvl3").offsetLeft > 600) ||
+            (document.getElementById("Meteorito3lvl3").offsetLeft > 600) ||
+            (document.getElementById("Meteorito4lvl3").offsetLeft > 600) && 
+            Puntajelvl3 != PuntajemMaximoNivel3) {
 
-                alert("YA ES DEMASIADO TARDE LOS METIORITOS DESTRUYERON GRAN PARTE DEL CONTINENTE LO MEJOR ES ESPERAR LO PEOR")
+                alert("YA ES DEMASIADO TARDE, LOS METEORITOS ESTAN DEMASIADO CERCA LA DESTRUCCION ES INMINENTE")
             document.getElementById("Perdiste_sound").play()
 
             document.getElementById("Meteoritolvl3").style.left = "-70%"
@@ -349,7 +350,7 @@ function DETENER_JUEGOlvl3() {
                 if (Tiempolvl3 == 0) {
                     Tiempolvl3 = 51
                     Puntajelvl3 = 0
-                    alert("Lo lamento perdiste")
+                    alert("Se te ha acabado el tiempo")
                 }
             }
 
