@@ -52,38 +52,41 @@
         </section>
         <!--SECCION - 3 ------------------------------------------------------------------------------------------------------->
 
-        <section id="Reglas">
-            <h1 class="Titulo_Reglas">Antes de empezar lee<br><br> estas instrucciones &#10161;</h1>
-            <img src="IMG/JUEGO.png" class="Img_reglas">
-            <div class="Reglas_estilos" id="R1">
-                <h3>INSTRUCCIÓN N° 1</h3>
-                <p>Lo que se encuentra señalado son los puntos, que según tu progreso se irán incrementando al desviar
-                    meteoritos que se dirigen hacia la tierra (esto al pasar el cursor sobre el meteorito); si los puntos
-                    obtenidos llegan a 10 será una victoria automática, pero recuerda que los meteoritos son impredecibles,
-                    así que debes estar muy atento para cuando lleguen..
-                </p>
+        <section class="contenedor-Supremo" id="Reglas">
+            <div class="contenedor_title">
+                <h1 class="Titulo_Reglas">Antes de empezar lee<br><br> estas instrucciones &#10161;</h1>
+                <img src="IMG/JUEGO.png" class="Img_reglas">
+                <div class="boton_reglas" onclick="Mover_2()">
+                    <h1>Siguiente</h1>
+                </div>
+            </div>
+            <div class="contenedor_reglas">
+                <div class="Reglas_estilos" id="R1">
+                    <h3>INSTRUCCIÓN N° 1</h3>
+                    <p>Lo que se encuentra señalado son los puntos, que según tu progreso se irán incrementando al desviar
+                        meteoritos que se dirigen hacia la tierra (esto al pasar el cursor sobre el meteorito); si los puntos
+                        obtenidos llegan a 10 será una victoria automática, pero recuerda que los meteoritos son impredecibles,
+                        así que debes estar muy atento para cuando lleguen..
+                    </p>
+                </div>
+                <div class="Reglas_estilos" id="R2">
+                    <h3>INSTRUCCIÓN N° 2</h3>
+                    <p>Cuentas con un botón que te permitirá pausar y reanudar la partida en cualquier momento del juego.
+                        Ten en cuenta que los meteoritos seguirán su trayecto en lo que reanudas la partida, por lo que
+                        debes tener mucho cuidado con eso..
+                    </p>
+                </div>
+                <div class="Reglas_estilos" id="R3_4">
+                    <h3>INSTRUCCIÓN N° 3</h3>
+                    <p>Estos son los meteoritos que debes evitar que ingresen a la tierra, por lo general suelen ser rápidos
+                        así que procura no confiarte cuando estos lleguen, puesto que su velocidad es progresiva conforme avances
+                        de nivel; sobre todo evita que los meteoritos cruzen la línea marcada, caso contrario
+                        nuestra salvación será inevitable.. (GAME OVER)
+                    </p>
+                </div>
             </div>
 
-
-            <div class="Reglas_estilos" id="R2">
-                <h3>INSTRUCCIÓN N° 2</h3>
-                <p>Cuentas con un botón que te permitirá pausar y reanudar la partida en cualquier momento del juego.
-                    Ten en cuenta que los meteoritos seguirán su trayecto en lo que reanudas la partida, por lo que 
-                    debes tener mucho cuidado con eso..
-                </p>
-            </div>
-
-
-            <div class="Reglas_estilos" id="R3_4">
-                <h3>INSTRUCCIÓN N° 3</h3>
-                <p>Estos son los meteoritos que debes evitar que ingresen a la tierra, por lo general suelen ser rápidos
-                    así que procura no confiarte cuando estos lleguen, puesto que su velocidad es progresiva conforme avances
-                    de nivel; sobre todo evita que los meteoritos cruzen la línea marcada, caso contrario 
-                    nuestra salvación será inevitable.. (GAME OVER)
-                </p>
-            </div>
-
-            <div class="Listo" onclick="Mover_2()">SIGUIENTE</div>
+            
 
 
         </section>
