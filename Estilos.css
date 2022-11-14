@@ -43,9 +43,6 @@ body {
 }
 
 
-/*CONTENEDOR DE TODOS LOS CONTENEDORES*/
-
-
 .Contenedor_Supremo{
     width: auto; 
     height: 100vh; 
@@ -233,15 +230,12 @@ body {
     
 }
 /*Fin de Reglas*/
-
-
-
-
-
-
 /*SEGUNDA SECCION------------------------------------------------------------------------------------------------------*/
 
-#Seccion_2 {position: relative; top: 10%;}/*Este es el contenedor de laseccion 2*/
+#Seccion_2 {
+    position: relative; 
+    top: 10%;
+ }/*Este es el contenedor de laseccion 2*/
 
 .Titulo_historia{
     font-family: 'Press Start 2P', cursive; /*ESTE ES EL TITULO DE LA SEGUNDA SECCION*/
@@ -287,9 +281,7 @@ body {
 .botones_historia a{
     text-decoration: none;
     color: white;
-    
-   
-    
+      
 }
 
 .boton_historia {
@@ -343,18 +335,18 @@ margin: auto;}
 
 
 
-.Titulo-Jugar{text-align: center; /*TITULO DE LA ULTIMA SECCION*/
-font-family: 'Press Start 2P', cursive; text-align: center;
-font-size: 60px;position: relative; top: 0%; left: -110%; padding-bottom: 2%;}
-   
+    .Titulo-Jugar{text-align: center; /*TITULO DE LA ULTIMA SECCION*/
+    font-family: 'Press Start 2P', cursive; text-align: center;
+    font-size: 60px;position: relative; top: 0%; left: -110%; padding-bottom: 2%;}
+    
 
-.Tituloar_Juego_5 {font-family: 'Press Start 2P', cursive; text-align: center; font-size: 60px;}
+    .Tituloar_Juego_5 {font-family: 'Press Start 2P', cursive; text-align: center; font-size: 60px;}
 
-.Contenedor_Mensaje_Star{height: 60%; width: 100%; left: 0%;  background: transparent;
-position: absolute; top: 20%; overflow: hidden; transition: 2.3s;}
+    .Contenedor_Mensaje_Star{height: 60%; width: 100%; left: 0%;  background: transparent;
+    position: absolute; top: 20%; overflow: hidden; transition: 2.3s;}
 
 /*FONDO DE LA SECCION PRINCIPAL*/
-.Seccion_Juego {width: 100%; height: 160vh; 
+   .Seccion_Juego {width: 100%; height: 160vh; 
     background-size: cover; display: flex;
     align-items: center; justify-content: center;
     flex-direction: column; position: absolute; top: -12%; left: -100%;  transition: 2s;       }
@@ -426,12 +418,25 @@ position: absolute; top: 20%; overflow: hidden; transition: 2.3s;}
     #Ganaste_audio {font-size: 20px; color: white;}
 
     /*ESTILOS GENERALES DE LOS METIORITOS*/
-    .Meteiorito {cursor: pointer; display: table; 
-    position: absolute; z-index: 1000; }
+    .Meteiorito {
+        cursor: pointer; 
+        display: table; 
+        position: absolute; 
+        z-index: 1000; 
+    }
     
     /*ESTILOS INDIVIDUALES DE MIS DOS METIORITOS*/
-    #Meteiorito{position: absolute; top: 0px; left: -10%;  transition: 2.4s;}
-    #Meteiorito2{position: absolute; top: 0px; left: -10%; transition: 2.4s;}
+    #Meteiorito{
+        position: absolute; 
+        top: 0px; left: -10%;  
+        transition: 2.4s;
+    }
+    #Meteiorito2{
+        position: absolute; 
+        top: 0px; 
+        left: -10%; 
+        transition: 2.4s;
+    }
     
     /*ESTILO DEL PLANETA*/
     .Planeta {position: absolute; top: 12%; left: 80%;
@@ -479,18 +484,23 @@ position: absolute; top: 20%; overflow: hidden; transition: 2.3s;}
      display: table-cell; vertical-align: middle;
       font-family: 'Press Start 2P', cursive;}
 
-.NEXT {width: 15vw; height: 3vw; background: rgb(0, 132, 255); font-size: 0.9vw; display: flex; align-items: center; justify-content: center; cursor: pointer; float: right;
-margin-left: 12%; }
+    .NEXT {width: 15vw; height: 3vw; background: rgb(0, 132, 255); font-size: 0.9vw; display: flex; align-items: center; justify-content: center; cursor: pointer; float: right;
+    margin-left: 12%; }
 
-.Contenedor_LVL{display: flex; justify-content: center; align-items: center; width: 100%; position: relative; top: 10%;}
-.Nada {width: 45vw; height: auto; background: rgba(191, 44, 228, 0.274); border: 2px solid purple; color: white; position: relative; left: 6%;  }
-.Nada h2 {padding-left: 3%; padding-right: 3%; font-size: 1.2vw;}
-.Nada p {padding-left: 3%; padding-right: 3%;}
+    .Contenedor_LVL{display: flex; justify-content: center; align-items: center; width: 100%; position: relative; top: 10%;}
+    .Nada {width: 45vw; height: auto; background: rgba(191, 44, 228, 0.274); border: 2px solid purple; color: white; position: relative; left: 6%;  }
+    .Nada h2 {padding-left: 3%; padding-right: 3%; font-size: 1.2vw;}
+    .Nada p {padding-left: 3%; padding-right: 3%;}
 
 /*RELOJ*/
-    .Fecha {display: flex; width: 280px; margin-bottom: 3%;
-    height: 50px; background: rgba(191, 44, 228, 0.274);
-    justify-content: center; align-items: center;
+    .Fecha {
+        display: flex; 
+        width: 280px; 
+        margin-bottom: 3%;
+        height: 50px; 
+        background: rgba(191, 44, 228, 0.274);
+       justify-content: center; 
+       align-items: center;
     }
     
     .Fecha p {font-size: 23px; color: white; font-family: 'Inconsolata', monospace; }
@@ -636,7 +646,10 @@ margin-left: 12%; }
         transition: 2s;
     }
     /*ESTILO DEL PLANETA*/
-    .Planetalvl2 {position: absolute; top: 12%; left: 80%;
+    .Planetalvl2 {
+        position: absolute; 
+        top: 12%; 
+        left: 80%;
         animation-name: rotation;
         animation-duration: 10s;
         animation-iteration-count: infinite;
