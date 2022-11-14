@@ -251,24 +251,91 @@ body {
      left: -100%;
     }
 
-.Imgane_metiorito{position: absolute; top: 210px; left: -100%; width:600px}/*ESTA ES LA IMAGEN DEL METIORITO CALLENDO A LA TIERRA*/
+.Img_historia {
+    margin-top: 5rem;
+    max-width: 100%;
+    border-radius: 10px;
+   
+}
+.contenedor_his{
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.historia_estilos {
+    padding: 2rem 2rem;
+    margin-top: 10rem;
+    background: rgba(248, 248, 248, 0.521); 
+    color: black; 
+    border: 0.19vw solid black;  
+    font-size: 14px;
+    border-radius: 8px;
+     
+    
+}
+.botones_historia{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 0.5rem;
+   
+ 
+   
+}
 
-.Contenedor_Historia{width: 40%;     /*ESTE ES EL CONENTENEDOR DE LA HISTORIA*/
-background: rgba(255, 255, 255, 0.659);
-color: black; padding-top: 2%; padding-right: 2%;
-padding-left: 2%; padding-bottom: 2%; float: right;
-position: relative; right: 100%; top: 194px;}
+.botones_historia a{
+    text-decoration: none;
+    color: white;
+    
+   
+    
+}
 
-.Boton_preparado{width: 70%; height: 6vh; /*ESTE ES EL BOTON DE LA HISTORIA*/
-background: black; display: flex; font-size: 1.2vw;
-justify-content: center; align-items: center;
-cursor: pointer; color: white; font-family: 'Inconsolata', monospace;
+.boton_historia {
+    margin: 5rem auto  5rem auto;
+    border-radius: 5px;
+    width: 180px; 
+    height: 70px; 
+    background: rgb(144, 90, 196);
+    border: 0px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.Boton_preparado{
+    width: 120px; 
+    height: 50px; /*ESTE ES EL BOTON DE LA HISTORIA*/
+    background: black; 
+    display: flex; 
+    font-size: 1.2vw;
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer; 
+    color: white; 
+    font-family: 'Inconsolata', monospace;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
  }
 
-.Contenedor_narracion {width: 9vh; height: 9vh; background: black; color: white; border-radius: 0.5rem;
-display: flex; justify-content: center; align-items: center; cursor: pointer; margin-left: 10%;}
-#VOLUMEN{font-size: 90%; }
-#PAUSE {display: none;}
+.button_narracion{   
+    padding-left: 0.5rem; 
+    cursor: pointer;
+    margin-top: 0.5rem;
+    width: 55px;
+    height: 35px;     
+    background: black;
+    color: white;
+    border-radius: 10px;
+   
+       
+} 
+#PAUSE {
+    display: none;
+}
 .BOTONES_2 {display: flex; align-items: center;  margin-top: 5%; height: 9vh; width: 50%; overflow: hidden;
 margin: auto;}
 
@@ -429,12 +496,17 @@ margin-left: 12%; }
     .Fecha p {font-size: 23px; color: white; font-family: 'Inconsolata', monospace; }
     
     .Hora {
-        display: flex; width: 280px; height: 100px;
+        display: flex; 
+        width: 280px; 
+        height: 100px;
         background: rgba(191, 44, 228, 0.274);
-        align-items: center; justify-content: center;
+        align-items: center; 
+        justify-content: center;
     }
     
-    .Hora p {font-size: 50px; color: white; font-family: 'Inconsolata', monospace; }
+    .Hora p {
+        font-size: 50px; 
+        color: white; font-family: 'Inconsolata', monospace; }
     
     
     #Caja_ULT {height: 100%; width: 20%; display: flex;
@@ -976,7 +1048,7 @@ margin-left: 12%; }
         .name-principal{ 
             font-size: 60px;
         }
-        .Img_reglas {
+        .Img_reglas, .Img_historia {
             max-width: auto;
             display: block;
             margin-left: auto;
@@ -991,6 +1063,7 @@ margin-left: 12%; }
             gap: 1rem;
             
         }
+   
       
     }
     @media only screen and (min-width: 769px) and (max-width: 2400px) {
@@ -1004,7 +1077,22 @@ margin-left: 12%; }
         }
         .contenedor_reglas{
             margin-top: 3rem;
+        }
+        .contenedor_reg{
+            margin-top: 2rem;
+        }
+      .contenedor-history{
+        margin-left: 80px;
+        margin-right: 100px;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        column-gap: 8rem;  
+         
     }
+    .Img_reglas ,.Img_historia {
+  
+        border-radius: 5px;
+     }
         
     }
     @media (max-width: 768px){

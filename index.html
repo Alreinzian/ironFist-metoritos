@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--iMPORTE UN TIPO DE LETA-->
@@ -13,23 +13,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="stylesheet" href="Estilos.css">
+    <link rel="stylesheet" href="Estilos.css">
     <title>METEOR IMPACT</title>
     <link rel="shortcut icon" href="assets/favicon.png">
 </head>
 
 <body id="Fondo">
-       <div class="menu">
-           <div class="logo">
-               <a href="index.html">
-                   <img class="logo_fist" src="assets/logo-fist.png" alt="">
-               </a>
-               <h2>Meteor Impact</h2>
-           </div>
-           <div class="Contenedor_RC" id="Contenedor_RC" onclick="Graficos_fondo()">
-               <div class="Recursos" id="Recursos"></div>
-           </div>
-       </div>
+    <div class="menu">
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo_fist" src="assets/logo-fist.png" alt="">
+            </a>
+            <h2>Meteor Impact</h2>
+        </div>
+        <div class="Contenedor_RC" id="Contenedor_RC" onclick="Graficos_fondo()">
+            <div class="Recursos" id="Recursos"></div>
+        </div>
+    </div>
 
     <!--SECCION - CONTENEDOR GENERAL-------------------------------------------------------------->
 
@@ -41,14 +41,16 @@
         <!--SECCION - 1 ------------------------------------------------------------------------------------------------------->
 
         <section class="Seccion_01" id="Seccion_01">
-            
-            
+
+
             <div class="principal">
                 <h1 class="name-principal">Meteor Impact</h1>
                 <h1 class="text-principal">¿LISTO PARA DEFENDER<br> EL PLANETA?</h1>
 
             </div>
-            <button class="boton-principal" id="Juego" onclick="Mover()"><h1>Jugar</h1></button>
+            <button class="boton-principal" id="Juego" onclick="Mover()">
+                <h1>Jugar</h1>
+            </button>
         </section>
         <!--SECCION - 3 ------------------------------------------------------------------------------------------------------->
 
@@ -63,30 +65,36 @@
             <div class="contenedor_reglas">
                 <div class="Reglas_estilos" id="R1">
                     <h3>INSTRUCCIÓN N° 1</h3>
-                    <p>Lo que se encuentra señalado son los puntos, que según tu progreso se irán incrementando al desviar
-                        meteoritos que se dirigen hacia la tierra (esto al pasar el cursor sobre el meteorito); si los puntos
-                        obtenidos llegan a 10 será una victoria automática, pero recuerda que los meteoritos son impredecibles,
+                    <p>Lo que se encuentra señalado son los puntos, que según tu progreso se irán incrementando al
+                        desviar
+                        meteoritos que se dirigen hacia la tierra (esto al pasar el cursor sobre el meteorito); si los
+                        puntos
+                        obtenidos llegan a 10 será una victoria automática, pero recuerda que los meteoritos son
+                        impredecibles,
                         así que debes estar muy atento para cuando lleguen..
                     </p>
                 </div>
                 <div class="Reglas_estilos" id="R2">
                     <h3>INSTRUCCIÓN N° 2</h3>
-                    <p>Cuentas con un botón que te permitirá pausar y reanudar la partida en cualquier momento del juego.
+                    <p>Cuentas con un botón que te permitirá pausar y reanudar la partida en cualquier momento del
+                        juego.
                         Ten en cuenta que los meteoritos seguirán su trayecto en lo que reanudas la partida, por lo que
                         debes tener mucho cuidado con eso..
                     </p>
                 </div>
                 <div class="Reglas_estilos" id="R3_4">
                     <h3>INSTRUCCIÓN N° 3</h3>
-                    <p>Estos son los meteoritos que debes evitar que ingresen a la tierra, por lo general suelen ser rápidos
-                        así que procura no confiarte cuando estos lleguen, puesto que su velocidad es progresiva conforme avances
+                    <p>Estos son los meteoritos que debes evitar que ingresen a la tierra, por lo general suelen ser
+                        rápidos
+                        así que procura no confiarte cuando estos lleguen, puesto que su velocidad es progresiva
+                        conforme avances
                         de nivel; sobre todo evita que los meteoritos cruzen la línea marcada, caso contrario
                         nuestra salvación será inevitable.. (GAME OVER)
                     </p>
                 </div>
             </div>
 
-            
+
 
 
         </section>
@@ -96,22 +104,56 @@
         <!--SECCION - 4 ------------------------------------------------------------------------------------------------------->
 
         <section id="Seccion_2">
-            <h1 class="Titulo_historia" id="Titulo_historia">PROLOGO</h1>
-            <div class="Contenedor_Historia" id="Mensaje">
-                <h3 style="margin-top: -1%;">Todo empezó cuando..</h3>
-                <p> En cierto día, las noticias de todo el mundo anunciaron que muy pronto se acercarían meteoritos de gran
-                tamaño a la tierra y que solo era cuestión de horas para que comenzaran a llegar; el resultado de esto
-                fue inmediato, ya que miles de personas comenzaron a alertarse y a hacer disturbios en centros comerciales y áreas publicas,
-                para que el gobierno les diera alguna respuesta, pero el gobierno ya tenía un plan de contingencia, ya que ellos se habían
-                enterado de la llegada de estos con días de antelación. Preparando con la ayuda del resto de gobiernos, la iniciativa "IRON FIST", que consistía en los
-                proyectiles más letales de la tierra y nuestra única salvación</p>
-                <div class="BOTONES_2">
-                    <div class="Boton_preparado" onclick="Mover_3()">COMENZAR</div>
-                    <div class="Contenedor_narracion" id="Contenedor_narracion">
-                        <i class="fas fa-play" id="VOLUMEN"></i><i class="fas fa-pause" id="PAUSE"></i></div>
+            <div class="contenedor-history">
+                <div>
+                    <div class="contenedor_title">
+                        <h1 class="Titulo_Reglas">Prólogo</h1>
+                        <div><img class="Img_historia" src="IMG/Metioritos_Callendo.jpg" id="Imagen"></div>
+                    </div>
+                </div>
+                <div class="contenedor_reg">
+                    <div class="historia_estilos" id="Mensaje">
+                        <div class="contenedor_his">
+                            <h3 style="margin-top: -1%;">Todo empezó cuando..</h3>
+                            <button class="button_narracion" id="Contenedor_narracion">
+                                <i class="fas fa-play" id="VOLUMEN"></i><i class="fas fa-pause" id="PAUSE"></i></button>
+                        </div>
+                        <p> En cierto día, las noticias de todo el mundo anunciaron que muy pronto se acercarían meteoritos de
+                            gran
+                            tamaño a la tierra y que solo era cuestión de horas para que comenzaran a llegar; el resultado de
+                            esto
+                            fue inmediato, ya que miles de personas comenzaron a alertarse y a hacer disturbios en centros
+                            comerciales y áreas publicas,
+                            para que el gobierno les diera alguna respuesta, pero el gobierno ya tenía un plan de contingencia,
+                            ya que ellos se habían
+                            enterado de la llegada de estos con días de antelación. Preparando con la ayuda del resto de
+                            gobiernos, la iniciativa "IRON FIST", que consistía en los
+                            proyectiles más letales de la tierra y nuestra única salvación</p>
+                        <div class="BOTONES_2">
+                            <div class="Boton_preparado" onclick="Mover_3()">
+                                <h1>Comenzar</h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <img src="IMG/Metioritos_Callendo.jpg" class="Imgane_metiorito" id="Imagen">
+            <div class="botones_historia">
+
+                <button class="boton_historia">
+                    <a href="">
+                        <h2>Avanzar</h2>
+                    </a>
+                </button>
+
+                <button class="boton_historia">
+                    <a href="rules.html">
+                        <h2>Retroceder</h2>
+                    </a>
+                </button>
+
+
+            </div>
+
         </section>
 
         <!--SECCION - 5 ------------------------------------------------------------------------------------------------------->
@@ -270,7 +312,8 @@
 
                         <h1>SIGUIENTE NIVEL<br>DESBLOQUEADO</h1>
                         <h3>AHORA ESTAS MÁS CERCA DE CULMINAR EL DESAFIO, ASÍ QUE PREPARATE PARA LO PEOR, RECUERDA QUE
-                            LOS METEORITOS NO SON ALGO PARA TOMÁRSELO A LA LIGERA Y MÁS AUN EN EL SIGUIENTE NIVEL, EN DONDE
+                            LOS METEORITOS NO SON ALGO PARA TOMÁRSELO A LA LIGERA Y MÁS AUN EN EL SIGUIENTE NIVEL, EN
+                            DONDE
                             LA DIFICULTAD AUMENTA EXPONENCIALMENTE; ¡TU PUEDES VALIENTE GUERRERO!
                         </h3>
                         <div style="display: flex; width: auto;">
@@ -411,11 +454,11 @@
                     <!-- <script src="DeshabilitarBoton.js"></script> -->
                 </div>
             </div>
-    
+
 
         </section>
 
-        
+
     </section>
 
     <!--llamado al script js-->
