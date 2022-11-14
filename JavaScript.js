@@ -274,7 +274,7 @@ function JUEGO(){
                     //HACE QUE EL JUEGO SE DETENGA
                     function PAUSE(){ //Colocar la funcion de pausa y reanudar
                         //SI LLEGA A UNA EJECUTA LA FUNCION PAUSE
-                        if (Activo == 1){
+                        if (Activo == 1 && Puntaje != PuntajeNivel1) {
                         
                         document.getElementById("Fondo_Ciberpunk").pause()
                         document.getElementById("Pausa_Pantalla").style.display = "table"

@@ -247,7 +247,7 @@ function JUEGOlvl2(){
                     //HACE QUE EL JUEGO SE DETENGA
                     function PAUSElvl2(){
                         //SI LLEGA A UNA EJECUTA LA FUNCION PAUSE
-                        if (Activolvl2 == 1){
+                        if (Activolvl2 == 1 && Puntajelvl2!= PuntajeMaximoNivel2){
                         document.getElementById("Pausa_Pantallalvl2").style.display = "table"
                         document.getElementById("Fondo_Ciberpunk").pause()
                         //clearInterval(Restar_Tiempolvl2)//BORRAMOS LA FUNCION DE TIEMPO
