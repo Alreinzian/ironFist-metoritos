@@ -116,7 +116,7 @@ function JUEGOlvl3() {
     }
 
     setTimeout(Meteorito_Direccionlvl3, 2200)
-    Intervalo_Dirlvl3 = setInterval(Meteorito_Direccionlvl3, 2450)
+    Intervalo_Dirlvl3 = setInterval(Meteorito_Direccionlvl3, 2850)
 
     //ESTA FUNCION DIRIGE AL METEORITO 2 A LA TIERRA         
     function Meteorito_Direccion2lvl3() {
@@ -129,7 +129,7 @@ function JUEGOlvl3() {
     }
 
     setTimeout(Meteorito_Direccion2lvl3, 2660)
-    Intervalo_Dir2lvl3 = setInterval(Meteorito_Direccion2lvl3, 2750)
+    Intervalo_Dir2lvl3 = setInterval(Meteorito_Direccion2lvl3, 2650)
 
     //ESTA FUNCION DIRIGE AL METEORITO 3 A LA TIERRA
     function Meteorito_Direccion3lvl3() {
@@ -142,7 +142,7 @@ function JUEGOlvl3() {
     }
 
     setTimeout(Meteorito_Direccion3lvl3, 2900)
-    Intervalo_Dir3lvl3 = setInterval(Meteorito_Direccion3lvl3, 2050)
+    Intervalo_Dir3lvl3 = setInterval(Meteorito_Direccion3lvl3, 2450)
 
     //ESTA FUNCION DIRIGE AL METEORITO 4 A LA TIERRA
     function Meteorito_Direccion4lvl3() {
@@ -155,7 +155,7 @@ function JUEGOlvl3() {
     }
 
     setTimeout(Meteorito_Direccion4lvl3, 3100)
-    Intervalo_Dir4lvl3 = setInterval(Meteorito_Direccion4lvl3, 2150)
+    Intervalo_Dir4lvl3 = setInterval(Meteorito_Direccion4lvl3, 2250)
 
 
     //AQUI ADJUNTAMOS LA ACCION DE LA FUNCION EXPULZAR AL PASAR SOBRE EL METEORITO
@@ -311,8 +311,8 @@ function DETENER_JUEGOlvl3() {
         //SI LLEGA A UNA EJECUTA LA FUNCION PAUSE
         if (Activolvl3 == 1) {
             document.getElementById("Pausa_Pantallalvl3").style.display = "table"
-            clearInterval(Restar_Tiempolvl3) //BORRAMOS LA FUNCION DE TIEMPO
-            document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
+            //clearInterval(Restar_Tiempolvl3) //BORRAMOS LA FUNCION DE TIEMPO
+            //document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
             document.getElementById("Fondo_Ciberpunk").pause()
             function Meteorito_detenerlvl3() {
                 clearInterval(Intervalo_Dirlvl3)
