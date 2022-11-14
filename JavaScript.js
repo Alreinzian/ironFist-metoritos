@@ -5,8 +5,8 @@ Swal.fire({
     html: 'METEOR IMPACT, es un juego que pondrá a prueba tus reflejos a medida que avances de nivel, con la única misión de poder defender nuestro planeta tierra de los meteoritos que buscan impactarla..',
     icon: 'sucess',
     confirmButtonText: 'ESTOY PREPARADO',
-    width: '50%',
-    height: '80%',
+    width: '40%',
+    height: '50%',
     timer: 100000,
     
     

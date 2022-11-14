@@ -54,15 +54,41 @@ body {
 
 /*PRIMERA SECCION------------------------------------------------------------------------------------------------------*/
 
-.Contenedor_RC {width: 7vw; height: 3vw; border-radius: 3rem; background: transparent; border: 3px solid white; position: relative;
-left: 44%; top: 4%; cursor: pointer;}
-.Recursos {width: 40%; height: 100%; border-radius: 50%; background: white; margin-left: 0%; transition: 1s;}
+.Contenedor_RC {
+    width: 60px; 
+    height: 30px; 
+    border-radius: 3rem; 
+    background: transparent; 
+    border: 3px solid white; 
+    position: relative;
+    left: 44%; 
+    top: 4%; 
+    cursor: pointer;
+}
+.Recursos {
+    width: 40%; 
+    height: 100%; 
+    border-radius: 50%; 
+    background: white; 
+    margin-left: 0%; 
+    transition: 1s;}
 
 
 
 /*PRIMERA SECCION------------------------------------------------------------------------------------------------------*/
 
-.Seccion_01{width: 100%; height: 100vh; overflow: hidden; position: relative; top: 0px; display: flex; flex-direction: column; align-items: center; justify-content: center;}/*ESTE ES EL CONTENEDOR DE
+.Seccion_01{
+    width: 100%; 
+    height: 100vh; 
+    overflow: hidden; 
+    position: relative; 
+    top: 0px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    
+    justify-content: center;
+}/*ESTE ES EL CONTENEDOR DE
                                                                                             LA SECCION 01*/
 
 .Texto_Principal { /*ESTE ES EL TITULO DE IRON FIST*/
@@ -72,22 +98,49 @@ left: 44%; top: 4%; cursor: pointer;}
     position: relative;
     top: -12%;
 }
-
-.Nombre{ /*ESTE ES LA PREGUNTA DEBAJO DEL NOMBRE*/
-    font-family: 'Press Start 2P', cursive; text-align: center;
-    font-size: 5.9vw;
+/*Title-principal*/
+.principal {
+    font-family: 'Press Start 2P', cursive;
     text-align: center;
-    position: relative;
-    top: 0%;
-    padding-bottom: 0%;
+   
 
 }
+.text-principal {
+    font-size: 60px;
+    top: -12%;
+}
+.name-principal{ 
+    
+    font-size: 80px;
+    margin-bottom: 0.5rem
+    
 
-.Boton {width: 20vw; height: 4vw; background: rgb(144, 90, 196); /*Este es el boton de JUGAR*/
-cursor: pointer;font-family: 'Press Start 2P', cursive;
-color: white; border-radius: 2px; border: none;
-margin-left: auto; margin-right: auto; margin: auto; margin-top: -3%; }
+}
+.boton-principal a{
+    text-decoration: none;
+    color: white;
 
+}
+.boton-principal h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    margin:auto auto;
+    margin-top: 1rem;
+      
+}
+.boton-principal {
+    text-align: center;
+    width: 200px; 
+    height: 60px; 
+    background: rgb(144, 90, 196); 
+    cursor: pointer;
+    color: white; 
+    border-radius: 5px; 
+    box-decoration-break:slice;
+    border:none;
+    margin: 1rem auto 0 auto;
+   }
+/*Sección 1*/
 /*SECCION REGLAS ------------------------------------------------------------------------------------------------------*/
 
 
