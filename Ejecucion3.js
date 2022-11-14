@@ -309,7 +309,7 @@ function DETENER_JUEGOlvl3() {
     //HACE QUE EL JUEGO SE DETENGA
     function PAUSElvl3() {
         //SI LLEGA A UNA EJECUTA LA FUNCION PAUSE
-        if (Activolvl3 == 1) {
+        if (Activolvl3 == 1 && Puntajelvl3!=PuntajemMaximoNivel3) {
             document.getElementById("Pausa_Pantallalvl3").style.display = "table"
             //clearInterval(Restar_Tiempolvl3) //BORRAMOS LA FUNCION DE TIEMPO
             //document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
@@ -341,17 +341,17 @@ function DETENER_JUEGOlvl3() {
             document.getElementById("Fondo_Ciberpunk").play()
             clearInterval(Pause_offlvl3)
 
-            function Tiempo_Disminurlvl3() { //VOLVEMOS A CREAR LA FUNCION DE TIEMPO PARA QUE REANUDE EL CONTEO
-                Tiempolvl3--;
-                document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
-                if (Tiempolvl3 == 0) {
-                    Tiempolvl3 = 51
-                    Puntajelvl3 = 0
-                    alert("Se te ha acabado el tiempo")
-                }
-            }
+            // function Tiempo_Disminurlvl3() { //VOLVEMOS A CREAR LA FUNCION DE TIEMPO PARA QUE REANUDE EL CONTEO
+            //     Tiempolvl3--;
+            //     document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
+            //     if (Tiempolvl3 == 0) {
+            //         Tiempolvl3 = 51
+            //         Puntajelvl3 = 0
+            //         alert("Se te ha acabado el tiempo")
+            //     }
+            // }
 
-            Restar_Tiempolvl3 = setInterval(Tiempo_Disminurlvl3, 1000)
+            //Restar_Tiempolvl3 = setInterval(Tiempo_Disminurlvl3, 1000)
 
             document.getElementById("Meteoritolvl3").style.left = Distancia1lvl3 + "%"
             document.getElementById("Meteoritolvl3").style.top = Altura1lvl3 + "px"
