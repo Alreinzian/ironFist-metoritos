@@ -53,7 +53,10 @@ body {
                                                                     CONTENEDOR*/
 
 /*PRIMERA SECCION------------------------------------------------------------------------------------------------------*/
-
+.menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .Contenedor_RC {
     width: 60px; 
     height: 30px; 
@@ -61,7 +64,7 @@ body {
     background: transparent; 
     border: 3px solid white; 
     position: relative;
-    left: 44%; 
+    left: 84%; 
     top: 4%; 
     cursor: pointer;
 }
@@ -140,19 +143,70 @@ body {
     border:none;
     margin: 1rem auto 0 auto;
    }
+
+   .boton-principal h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    margin:auto auto;
+    margin-top: 1rem;
+      
+}
+    .boton-principal {
+        text-align: center;
+        width: 200px; 
+        height: 60px; 
+        background: rgb(144, 90, 196); 
+        cursor: pointer;
+        color: white; 
+        border-radius: 5px; 
+        box-decoration-break:slice;
+        border:none;
+        margin: 1rem auto 0 auto;
+    }
 /*Sección 1*/
 /*SECCION REGLAS ------------------------------------------------------------------------------------------------------*/
 
 
 
-#Reglas{position: relative; width: 100%; top: 120%;}
+#Reglas{
+    position: relative; 
+    width: 100%; 
+    top: 120%;
+}
 
-.Titulo_Reglas{font-size: 2.4VW; position: relative; top: -20%; left: 2%; font-family: 'Press Start 2P', cursive;}
 
-.Img_reglas {margin-top: 1%; margin-left: 2%; width: 34%}
+.Titulo_Reglas{
+    font-size: 25px; 
+    font-family: 'Press Start 2P', cursive;}
 
-.Reglas_estilos {background: rgba(248, 248, 248, 0.521); color: black; border: 0.19vw solid black; 
-width: 40%; height: auto; position: absolute;   left: 58% ; font-size: 1.14vw;}
+.Img_reglas {
+    max-width: 100%;
+    border-radius: 10px;
+   
+}
+
+.Reglas_estilos {
+    
+    margin-top: 1.5rem;
+    background: rgba(248, 248, 248, 0.521); 
+    color: black; 
+    border: 0.19vw solid black;  
+    font-size: 15px;
+    border-radius: 8px;
+    
+    
+}
+.Reglas_estilos h3  {
+   
+    margin-left: 3%; 
+    margin-right: 3%; 
+    text-align: center;} 
+.Reglas_estilos p  {
+    
+    margin-left: 3%; 
+    margin-right: 3%; 
+    text-align: justify;
+}
 
 #R1 {top: -4%;}
 #R2 {top: 38%;}
@@ -831,3 +885,15 @@ margin-left: 12%; }
         display: grid;
         grid-template-columns: repeat( 50% 1fr);
     }
+    
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        .text-principal {
+            font-size: 40px;
+        
+        }
+        .name-principal{ 
+            font-size: 60px;
+        }
+        
+    }
+    
