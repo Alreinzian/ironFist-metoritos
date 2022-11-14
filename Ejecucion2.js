@@ -171,7 +171,8 @@ function JUEGOlvl2(){
         function perdistelvl2 (){
             if((document.getElementById("Meteioritolvl2").offsetLeft > 600) ||
             (document.getElementById("Meteiorito2lvl2").offsetLeft > 600) ||
-            (document.getElementById("Meteiorito3lvl2").offsetLeft > 600))
+            (document.getElementById("Meteiorito3lvl2").offsetLeft > 600) 
+            && Puntajelvl2 != PuntajeMaximoNivel2)
             
             {
                 document.getElementById("Perdiste_sound").play()
