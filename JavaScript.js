@@ -218,7 +218,8 @@ function JUEGO(){
         //TAMBIEN RESETEA LOS VALORES Y LLEVA A LOS METIORITOS FUERA DEL MAPA DE MANERA INSTANTANEA
         function perdiste (){
             if((document.getElementById("Meteiorito").offsetLeft > 600) ||
-            (document.getElementById("Meteiorito2").offsetLeft > 600)) {
+            (document.getElementById("Meteiorito2").offsetLeft > 600)
+            && Puntaje != PuntajeNivel1) {
 
                 document.getElementById("Perdiste_sound").play()
                 alert("YA ES DEMASIADO TARDE, LOS METEORITOS DESTRUYERON GRAN PARTE DEL CONTINENTE Y LO MEJOR ES ESPERAR LO PEOR")
