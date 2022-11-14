@@ -234,15 +234,8 @@ body {
 }
 /*Fin de Reglas*/
 
-#R1 {top: -4%;}
-#R2 {top: 38%;}
-#R3_4 {top: 75%;}
-.Reglas_estilos h3  {margin-left: 3%; margin-right: 3%; text-align: center;} 
-.Reglas_estilos p  {margin-left: 3%; margin-right: 3%; text-align: center;} 
 
-.Listo {width: 34%; height: 8vh; background: rgb(100, 21, 146); display: flex; 
-align-items: center; justify-content: center; cursor: pointer; position: relative; left: 2%; top: 2vw; font-size: 1.5vw;
-font-family: 'Inconsolata', monospace;}
+
 
 
 
@@ -250,9 +243,13 @@ font-family: 'Inconsolata', monospace;}
 
 #Seccion_2 {position: relative; top: 10%;}/*Este es el contenedor de laseccion 2*/
 
-.Titulo_historia{font-family: 'Press Start 2P', cursive; /*ESTE ES EL TITULO DE LA SEGUNDA SECCION*/
-text-align: left; font-size: 40px; position: absolute; 
-left: -100%;}
+.Titulo_historia{
+    font-family: 'Press Start 2P', cursive; /*ESTE ES EL TITULO DE LA SEGUNDA SECCION*/
+    text-align: left;
+     font-size: 40px; 
+     position: absolute; 
+     left: -100%;
+    }
 
 .Imgane_metiorito{position: absolute; top: 210px; left: -100%; width:600px}/*ESTA ES LA IMAGEN DEL METIORITO CALLENDO A LA TIERRA*/
 
@@ -346,7 +343,9 @@ position: absolute; top: 20%; overflow: hidden; transition: 2.3s;}
     height: 100%; background: rgba(0, 0, 0, 0.541);
     text-align: center; z-index: 1000000000; display: none;}
 
-    .GANASTE_PANTALLA {position: absolute; width: 100%; height: 100%; background: rgba(47, 255, 57, 0.63);
+    .GANASTE_PANTALLA {
+        position: absolute; 
+        width: 100%; height: 100%; background: rgba(47, 255, 57, 0.63);
     z-index: 900; top: 0%; display: flex; justify-content: center; align-items: center; flex-direction: column; display: none;}
 
     .GANASTE_PANTALLA h1 {font-family: 'Press Start 2P', cursive; color: rgb(10, 90, 16);
@@ -422,7 +421,7 @@ margin-left: 12%; }
 .Nada p {padding-left: 3%; padding-right: 3%;}
 
 /*RELOJ*/
-.Fecha {display: flex; width: 280px; margin-bottom: 3%;
+    .Fecha {display: flex; width: 280px; margin-bottom: 3%;
     height: 50px; background: rgba(191, 44, 228, 0.274);
     justify-content: center; align-items: center;
     }
@@ -449,32 +448,18 @@ margin-left: 12%; }
     .Contenedor_Reloj { left: 5%; 
     }
 /*BLOQUEO DE NIVELES*/
-#NIVEL_01 {display: block;}
-#NIVEL_02 {display: none;}
-#NIVEL3 {display: none;}
+    #NIVEL_01 {
+        display: block;
+    }
 
+    #NIVEL_02 {
+        display: none;
+    }
 
-
-/*RESPONSIVE */
-@media (max-width: 768px){
-    .Imgane_metiorito{width: 47%; top: 16vw;}
-    .Boton_preparado{width: 38%;}
-    .Titulo-Jugar {font-size: 50px;}
-    .Contenedor_Historia{top: 15vw; font-size: 1.3vw;}
-    
-}
-@media (max-width: 356px){
-    .Imgane_metiorito{width: 47%; top: 16vw;}
-    .Boton_preparado{width: 38%;}
-    .Titulo-Jugar {font-size: 50px;}
-    .Contenedor_Historia{top: 15vw; font-size: 1.3vw;}
-    
-}
-
-
+    #NIVEL3 {
+        display: none;
+    }
 /*LVL 2 ---------------------------------------------------------------------------------------------------------*/
-
-
     
     /*ESTILOS DENTRO DEL CONTENEDOR DEL JUEGO*/
     .Contenedorlvl2 {width: 900px; height: 500px; 
@@ -520,24 +505,64 @@ margin-left: 12%; }
     height: 100%; background: rgba(0, 0, 0, 0.541);
     text-align: center; z-index: 1000000000; display: none;}
     
-    .GanastePantallaLvL2 {position: absolute; width: 100%; height: 100%; background: rgba(47, 255, 57, 0.63);
-        z-index: 900; top: 0%; display: flex; justify-content: center; align-items: center; flex-direction: column; display: none;}
+    .GanastePantallaLvL2 {
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        background: rgba(47, 255, 57, 0.63);
+        z-index: 900; 
+        top: 0%; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column; 
+        display: none;
+    }
     
-    .GanastePantallaLvL2 h1 {font-family: 'Press Start 2P', cursive; color: rgb(10, 90, 16);
-        text-align: center; font-size: 2rem;}
+    .GanastePantallaLvL2 h1 {
+        font-family: 'Press Start 2P', cursive; 
+        color: rgb(10, 90, 16);
+        text-align: center; 
+        font-size: 2rem;
+    }
     
-    .GanastePantallaLvL2 h3 {text-align: center; padding-left: 10%; padding-right: 10%; color: rgb(0, 0, 0);
-        font-family: 'Press Start 2P', cursive;}
+    .GanastePantallaLvL2 h3 {
+        text-align: center; 
+        padding-left: 10%; 
+        padding-right: 10%; 
+        color: rgb(0, 0, 0);
+        font-family: 'Press Start 2P', cursive;
+    }
 
 
     /*ESTILOS GENERALES DE LOS METIORITOS*/
-    .Meteioritolvl2 {cursor: pointer; display: table; 
-    position: absolute; z-index: 1000; }
+    .Meteioritolvl2 {
+        
+        cursor: pointer;
+        display: table; 
+        position: absolute; 
+        z-index: 1000; 
+    }
     
     /*ESTILOS INDIVIDUALES DE MIS DOS METIORITOS*/
-    #Meteioritolvl2{top: 0%; position: absolute; left: -30%; transition: 2s;}
-    #Meteiorito2lvl2{ top: 0%; position: absolute; left: -30%; transition: 2s;}
-    #Meteiorito3lvl2{top: 0%; position: absolute; left: -30%; transition: 2s;}
+    #Meteioritolvl2{
+        top: 0%; 
+        position: absolute; 
+        left: -30%; 
+        transition: 2s;
+    }
+    #Meteiorito2lvl2{ 
+        top: 0%; 
+        position: absolute; 
+        left: -30%; 
+        transition: 2s;
+    }
+    #Meteiorito3lvl2{
+        top: 0%; 
+        position: absolute; 
+        left: -30%; 
+        transition: 2s;
+    }
     /*ESTILO DEL PLANETA*/
     .Planetalvl2 {position: absolute; top: 12%; left: 80%;
         animation-name: rotation;
@@ -556,54 +581,85 @@ margin-left: 12%; }
     }
     
     /*ESTILO DEL LIMITE EN EL JUEGO*/
-    .Limitelvl2 {height: 100%; width: 50px;
-    border-left: 5px dashed white; 
-    position: absolute; top: 0%; left: 70%;}
+    .Limitelvl2 {
+        height: 100%; 
+        width: 50px;
+        border-left: 5px dashed white; 
+        position: absolute; 
+        top: 0%; 
+        left: 70%;
+    }
     
     /*CABEZARA DENTRO DEL JUEGO*/
-    .Cabezeralvl2 {height: 70px; 
-    border: 5px dashed rgb(0, 119, 255); 
-    background: rgba(255, 255, 255, 0.363); 
-    border-bottom: none; display: flex; 
-    align-items: center; position: relative; }
+    .Cabezeralvl2 {
+        height: 70px; 
+        border: 5px dashed rgb(0, 119, 255); 
+        background: rgba(255, 255, 255, 0.363); 
+        border-bottom: none; 
+        display: flex; 
+        align-items: center; 
+        position: relative; 
+    }
     
     /*ESTILOS DEL SPAN Y DEL TEXTO DE TIEMPO*/
-    .Tiempolvl2 {display: flex; align-items: center;
+    .Tiempolvl2 {
+        display: flex; 
+        align-items: center;
         flex-direction: column;
         width: 14%; height: 70%; color: black; 
         font-size: 13px; line-height: 1vh ;   }
     
     /*ESTILOS DEL SPAN Y DEL TEXTO DE PUNTAJE*/
-    .Puntajelvl2 {display: flex; align-items: center; 
-     flex-direction: column; margin-top: 2%;
-    width: 14%; height: 100%; color: black; 
-    font-size: 13px; line-height: 7px;}
+    .Puntajelvl2 {
+        display: flex; 
+        align-items: center; 
+        flex-direction: column; 
+        margin-top: 2%;
+        width: 14%; 
+        height: 100%; 
+        color: black; 
+        font-size: 13px; 
+        line-height: 7px;
+    }
     
     /*ESTILOS DEL BOTON DE PAUSE*/
-    .Pauselvl2 {width: 20%; height: 70%; font-size: 14px;
-    background: rgb(0, 119, 255);; display: flex;
-    align-items: center; justify-content: center;
-    color: white; cursor: pointer; position: relative;
-    left: 50%; }
+    .Pauselvl2 {
+        width: 20%; 
+        height: 70%;
+        font-size: 14px;
+        background: rgb(0, 119, 255);
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        color: white; 
+        cursor: pointer; 
+        position: relative;
+        left: 50%; 
+    }
     
     /*MENSAJE DENTRO DE PAUSE*/
-    .Mensaje_Pauselvl2{font-size: 50px; color: white; display: table-cell; vertical-align: middle; font-family: 'Press Start 2P', cursive;}
+    .Mensaje_Pauselvl2{
+        font-size: 50px; 
+        color: white; 
+        display: table-cell; 
+        vertical-align: middle; 
+        font-family: 'Press Start 2P', cursive;
+    }
     
     /*Alerta*/
     .Perdistelvl2 {
-     color:aqua;
+      color:aqua;
      
     }
     .Aumentarpuntoslvl2 {
-     color: black;
+
+      color: black;
     
     
     }
     
     /*TERCER NIVEL ----------------------------------------------------------------------------------------*/
-
-
-    
+   
     /*ESTILOS DENTRO DEL CONTENEDOR DEL JUEGO*/
     .Contenedorlvl3 {
         width: 900px;
@@ -947,7 +1003,41 @@ margin-left: 12%; }
             
         }
         .contenedor_reglas{
-        margin-top: 3rem;
+            margin-top: 3rem;
     }
+        
+    }
+    @media (max-width: 768px){
+        .Imgane_metiorito{
+            width: 47%; 
+            top: 16vw;
+        }
+        .Boton_preparado{
+            width: 38%;
+        }
+        .Titulo-Jugar {
+            font-size: 50px;
+        }
+        .Contenedor_Historia{
+            top: 15vw; 
+            font-size: 1.3vw;
+        }
+    
+}
+    @media (max-width: 356px){
+        .Imgane_metiorito{
+            width: 47%; 
+            top: 16vw;
+        }
+        .Boton_preparado{
+            width: 38%;
+        }
+        .Titulo-Jugar {
+            font-size: 50px;
+        }
+        .Contenedor_Historia{
+            top: 15vw; 
+            font-size: 1.3vw;
+        }
         
     }
