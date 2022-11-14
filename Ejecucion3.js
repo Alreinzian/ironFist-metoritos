@@ -222,26 +222,26 @@ function JUEGOlvl3() {
             Puntajelvl3 != PuntajemMaximoNivel3) {
 
                 alert("YA ES DEMASIADO TARDE, LOS METEORITOS ESTAN DEMASIADO CERCA LA DESTRUCCION ES INMINENTE")
-            document.getElementById("Perdiste_sound").play()
+                document.getElementById("Perdiste_sound").play()
 
-            document.getElementById("Meteoritolvl3").style.left = "-70%"
-            document.getElementById("Meteoritolvl3").style.transition = "0s"
-            setTimeout(Meteorito_Direccion4lvl3, 2000)
+                document.getElementById("Meteoritolvl3").style.left = "-70%"
+                document.getElementById("Meteoritolvl3").style.transition = "0s"
+                setTimeout(Meteorito_Direccion4lvl3, 2000)
 
-            document.getElementById("Meteorito2lvl3").style.left = "-70%"
-            document.getElementById("Meteorito2lvl3").style.transition = "0s"
-            setTimeout(Meteorito_Direccion4lvl3, 2000)
+                document.getElementById("Meteorito2lvl3").style.left = "-70%"
+                document.getElementById("Meteorito2lvl3").style.transition = "0s"
+                setTimeout(Meteorito_Direccion4lvl3, 2000)
 
-            document.getElementById("Meteorito3lvl3").style.left = "-70%"
-            document.getElementById("Meteorito3lvl3").style.transition = "0s"
-            setTimeout(Meteorito_Direccion4lvl3, 2600)
+                document.getElementById("Meteorito3lvl3").style.left = "-70%"
+                document.getElementById("Meteorito3lvl3").style.transition = "0s"
+                setTimeout(Meteorito_Direccion4lvl3, 2600)
             
-            document.getElementById("Meteorito4lvl3").style.left = "-70%"
-            document.getElementById("Meteorito4lvl3").style.transition = "0s"
-            setTimeout(Meteorito_Direccion4lvl3, 2900)
+                document.getElementById("Meteorito4lvl3").style.left = "-70%"
+                document.getElementById("Meteorito4lvl3").style.transition = "0s"
+                setTimeout(Meteorito_Direccion4lvl3, 2900)
 
-            Tiempolvl3 = 51
-            Puntajelvl3 = 0
+                Tiempolvl3 = 51
+                Puntajelvl3 = 0
         }
         else {
 

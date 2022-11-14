@@ -40,7 +40,7 @@ function JUEGOlvl2(){
                 //Tiempolvl2 = 61
 
                 //document.getElementById("Tiempolvl2").innerHTML = 60
-                document.getElementById("Puntajelvl2").innerHTML = 0+"&nbsp;/&nbsp;"+PuntajeMaximoNivel2
+                document.getElementById("Puntajelvl2").innerHTML = Puntajelvl2+"&nbsp;/&nbsp;"+PuntajeMaximoNivel2
                 document.getElementById("Fondo_Ciberpunk").pause()
                 document.getElementById("Triunfo").play()
                 document.getElementById("NEXT").addEventListener('click', Habilitar_Siguienten_LVL)
