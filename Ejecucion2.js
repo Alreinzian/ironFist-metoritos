@@ -74,9 +74,9 @@ function JUEGOlvl2(){
                 document.getElementById("GanastePantallaLvL2").style.display = "flex"
                 Swal.fire({
                     title : 'FELICIDADES POR SUPERAR <br> EL NIVEL <br><br> <img src="IMG/Check.png" width = "120px"><br>',
-                    html: '¿VERDAD QUE FUE DIFÍCIL?. Prepárate para el siguiente nivel que las cosas van a empeorar. Agradecemos tu dedicación en pasar este nivel, esperemos que puedas seguir defendiendo la tierra de esa manera y mejores tu habilidad de reacción ',
+                    html: '¿VERDAD QUE FUE DIFÍCIL? Prepárate para el siguiente nivel que las cosas se van a complicar. Agradecemos tu dedicación en pasar este nivel, esperamos que puedas seguir defendiendo la tierra de esa manera',
                     icon: 'sucess',
-                    confirmButtonText: 'QUIERO CONTINUAR',
+                    confirmButtonText: 'CONTINUAR',
                     width: '50%',
                     height: '80%',
                     timer: 100000,
@@ -166,9 +166,6 @@ function JUEGOlvl2(){
             document.getElementById("Meteiorito3lvl2").style.transition = "1.8s"}
 
 
-
-
-        
         //ESTA FUNCION SE ENCARGA DE ALERTARTE UNA VEZ EL METIORITO CRUZE LA LINEA CON UN PERDISTE
         //TAMBIEN RESETEA LOS VALORES Y LLEVA A LOS METIORITOS FUERA DEL MAPA DE MANERA INSTANTANEA
         function perdistelvl2 (){
@@ -329,5 +326,3 @@ function JUEGOlvl2(){
                                 Reanudar_trayectoria3lvl2 = setInterval(Metiorito_Direccion3lvl2, 2570)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
 
                         Activolvl2 = 1 } } } //CAMBIAMOS EL VALOR DE NUEVO A 1 PARA QUE AL SIGUIENTE CLICK SE EJECUTE EL PAUSE  S 
-
-                

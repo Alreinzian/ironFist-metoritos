@@ -1,4 +1,4 @@
-Tiempolvl3 = 51 //VARIBLE DE INICIO TIEMPO
+Tiempolvl3 = 51 //VARIABLE DE INICIO TIEMPO
 Puntajelvl3 = 0 //VARIABLE DE INICIO PUNTOS
 
 PuntajemMaximoNivel3 = 30
@@ -39,7 +39,7 @@ function JUEGOlvl3() {
             function Contactos(){
             Swal.fire({
                 title : 'Felicitaciones por parte del <br> Grupo Omega<br><br><img src="IMG/Logo_Omega.png" width = "120px">',
-                html: '<b class="Aumentar puntos">Sabia que lo lograrias, nos salvaste de la destrucciÓn, pero ahora nos espera otra lucha, esperemos volVerte a ver jugando IRON FIST 2 en un futuro <br><br> CONTACTOS:<br><br> 71727432@certus.edu.pe <br><br> 71663265@certus.edu.pe <br><br> 70845813@certus.edu.pe <br> </b>',
+                html: '<b class="Aumentar puntos">Sabia que lo lograrias, nos salvaste de la destrucción, la tierra está a salvo gracias a ti..<br><br> CONTACTOS:<br><br> 71727432@certus.edu.pe <br><br> 71663265@certus.edu.pe <br><br> 70845813@certus.edu.pe <br> </b>',
                 icon: 'sucess',
                 confirmButtonText: '<span id="Pausear_musica">De acuerdo</span>',
                 width: '50%',
@@ -158,7 +158,6 @@ function JUEGOlvl3() {
     Intervalo_Dir4lvl3 = setInterval(Meteorito_Direccion4lvl3, 2150)
 
 
-
     //AQUI ADJUNTAMOS LA ACCION DE LA FUNCION EXPULZAR AL PASAR SOBRE EL METEORITO
     document.getElementById("Meteoritolvl3").addEventListener('mouseover', Explulsarlvl3)
     document.getElementById("Meteorito2lvl3").addEventListener('mouseover', Explulsar2lvl3)
@@ -213,7 +212,6 @@ function JUEGOlvl3() {
     }
 
 
-
     //ESTA FUNCION SE ENCARGA DE ALERTARTE UNA VEZ EL METEORITO CRUZE LA LINEA CON UN PERDISTE
     //TAMBIEN RESETEA LOS VALORES Y LLEVA A LOS METEORITOS FUERA DEL MAPA DE MANERA INSTANTANEA
     function perdistelvl3() {
@@ -258,7 +256,6 @@ function JUEGOlvl3() {
     setInterval(perdistelvl3, 1) //LE COLOCAMOS UNO PARA QUE SIEMPRE SE ESTE EJECUTANDO, DADO A 
     //QUE NO SABEMOS CUANDO EL METEORITO VA A SUPERAR EL LIMITE
 }
-
 
 
 //LE DECIMOS QUE AL PRESIONAR EL BOTON JUGAR EJECUTARA LA FUNCION PLAY     
@@ -436,4 +433,3 @@ function DETENER_JUEGOlvl3() {
         }
     }
 } //CAMBIAMOS EL VALOR DE NUEVO A 1 PARA QUE AL SIGUIENTE CLICK SE EJECUTE EL PAUSE  S
-

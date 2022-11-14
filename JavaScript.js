@@ -3,6 +3,7 @@
 Swal.fire({
     title : '¿Preparado para salvar el mundo? <br><br> <img src="IMG/planeta_tierra.png" width = "120px"><br>',
     html: 'METEOR IMPACT, es un juego que pondrá a prueba tus reflejos a medida que avances de nivel, con la única misión de poder defender nuestro planeta tierra de los meteoritos que buscan impactarla..',
+    icon: 'sucess',
     confirmButtonText: 'ESTOY PREPARADO',
     width: '50%',
     height: '80%',
@@ -18,8 +19,7 @@ Swal.fire({
     });
 
 
-
-// Tiempo = 71 //VARIBLE DE INICIO TIEMPO
+// Tiempo = 71 //VARIABLE DE INICIO TIEMPO
 Puntaje = 0 //VARIABLE DE INICIO PUNTOS
 PuntajeNivel1 = 10
 PuntajeNivel2 = 20
@@ -53,8 +53,6 @@ function Iniciar_narracion(){
 }
 
 
-
-
 Graficos = 1 //Este es el medidor de graficos
 
 //En esta funcion cambio de fondo al presionar el CHEKBOX, para graurar los graficos dentro del juego
@@ -73,10 +71,6 @@ document.getElementById("Fondo").style.backgroundImage = "url(IMG/Fondo_Espacio.
 Graficos = 1
 }
 }
-
-
-
-
 
 
 //CONTENEDOR QUE CONTEIENE TOO EL JUEGO
@@ -161,8 +155,7 @@ function JUEGO(){
                     }
 
 
-
-        //ESTA FUNCION DIRIGE AL PRIMER METIORITO 1 A LA TIERRA 
+        //ESTA FUNCION DIRIGE AL PRIMER METEORITO 1 A LA TIERRA 
         function Metiorito_Direccion(){
             Altura1 = Math.round(Math.random()* 450)
 
@@ -209,9 +202,6 @@ function JUEGO(){
             document.getElementById("Meteiorito2").style.left = Distancia + "px"
             document.getElementById("Meteiorito2").style.top = Altura + "px"
             document.getElementById("Meteiorito2").style.transition = "1.5s"}
-
-
-
 
         
         //ESTA FUNCION SE ENCARGA DE ALERTARTE UNA VEZ EL METIORITO CRUZE LA LINEA CON UN PERDISTE
@@ -272,9 +262,6 @@ function JUEGO(){
                         setInterval (Cuenta_rg, 1000)}
 
                         setTimeout(ESPERAR, 350)}//SE EJECUTARA EN UN LAPSO DE 350, DESPUES DE PRESIONAR EL BOTON
-
-
-
 
 
             //ESTA FUNCION CONTIENE EL REANUDE Y PAUSE DEL BOTON
@@ -362,16 +349,7 @@ function JUEGO(){
                             Reanudar_trayectoria2 = setInterval(Metiorito_Direccion2, 3300)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
 
 
-
-
-
                         Activo = 1} } } //CAMBIAMOS EL VALOR DE NUEVO A 1 PARA QUE AL SIGUIENTE CLICK SE EJECUTE EL PAUSE  S
-
-
-
-    
-
-
 
 
 
@@ -425,7 +403,6 @@ function Mover_2(){
     titulo.style.transition = "1s"
     }
     setTimeout(Desaparecer2, 1260)
-
 
 
 }
