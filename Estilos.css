@@ -46,7 +46,8 @@ body {
 .Contenedor_Supremo{
     width: auto; 
     height: 100vh; 
-    overflow: hidden;} /*ESTE ES EL CONTENEDOR DONDE SE DESLIZAN TODOS LOS
+    overflow: hidden;
+} /*ESTE ES EL CONTENEDOR DONDE SE DESLIZAN TODOS LOS
                                                                     CONTENEDOR*/
 
 /*PRIMERA SECCION------------------------------------------------------------------------------------------------------*/
